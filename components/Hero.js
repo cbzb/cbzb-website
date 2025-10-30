@@ -29,10 +29,16 @@ export default function Hero() {
       </div>
 
       {/* Mobile layout */}
-      <div className="md:hidden relative overflow-hidden">
-        <div className="relative bg-primary-dark text-text-light px-12 py-16 min-h-[90dvh] flex flex-col">
-          {/* Watermark image only on mobile hero */}
-          <img src="/icone_black.png" alt="Marca d'água" className="pointer-events-none select-none absolute inset-0 opacity-10 object-contain object-center" aria-hidden />
+      <div className="md:hidden relative overflow-visible">
+        <div className="relative bg-primary-dark text-text-light px-12 py-16 min-h-[90dvh] flex flex-col overflow-visible">
+          {/* Watermark image only on mobile hero (grande e parcialmente visível) */}
+          <img
+            src="/icone_black.png"
+            alt="Marca d'água"
+            className="pointer-events-none select-none fixed right-[-30%] top-[-20%] w-[180%] h-[130%] opacity-35 object-cover"
+            style={{ zIndex: 9999 }}
+            aria-hidden
+          />
 
           <div className="mt-4">
             <h1 className="font-sans font-medium text-5xl leading-tight">

@@ -20,7 +20,7 @@ export default function Header() {
   const globalPaddingX = "px-10" 
 
   return (
-    <header className="w-full relative bg-primary-dark">
+    <header className="w-full relative bg-primary-dark ">
       
       {/* --- Desktop Header --- */}
       <div className="hidden md:grid grid-cols-[auto_1fr_auto] items-stretch border-b-2 border-secondary ml-20">
