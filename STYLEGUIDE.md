@@ -33,6 +33,15 @@ Aplicação sugerida:
 - **Hero**: lado esquerdo com `bg-primary-dark` e copy; lado direito com imagem `public/hero.jpeg`; CTA botão "ghost"
 - **Button (ghost)**: `border border-text-light text-text-light uppercase px-6 py-3 hover:bg-text-light hover:text-text-dark`
 
+### Logos e Ícones
+- Arquivos: `public/logo.png` (logo principal) e `public/icone.png` (monograma ZBC)
+- Tamanhos sugeridos conforme referência:
+  - Header desktop: logo `h-40px` (usamos `h-[40px]`), ícone `h-36px` (`h-[36px]`)
+  - Header desktop (min-width 768px fallback): logo `h-36px`, ícone `h-32px`
+  - Header mobile: ícone `h-28px` (`h-[28px]`)
+  - MobileMenu header: ícone `h-32px` (`h-[32px]`)
+  - Todos com `w-auto` para preservar proporção
+
 ### Diretrizes Mobile (refinamentos)
 - **Hero (mobile)**
   - Fundo: `bg-primary-dark` com watermark grande "ZBC" em `opacity-10` (preferir `absolute` + `font-serif`)

@@ -2,24 +2,19 @@ import Button from './Button'
 
 export default function Hero() {
   return (
-    <section className="border-b border-divider">
+    <section className="border-b-2 border-divider">
       {/* Desktop layout */}
       <div className="hidden md:grid md:grid-cols-2 min-h-[540px] lg:min-h-[680px]">
         {/* Left column */}
         <div className="bg-primary-dark text-text-light flex flex-col justify-center px-8 lg:px-20 py-20 relative border-r border-divider">
-          <h1 className="font-serif font-bold text-5xl leading-tight max-w-2xl">
+          <h1 className="font-serif font-normal text-5xl leading-tight max-w-2xl">
             Excelência jurídica com olhar estratégico.
           </h1>
           <p className="mt-8 font-sans text-lg text-text-light/80 max-w-xl">
-            Expertise em Direito Trabalhista, Empresarial e Desportivo.
+            Expertise em Direito Trabalhista,<br />Empresarial e Desportivo.
           </p>
           <div className="mt-12">
             <Button href="#contato">Agendar consulta</Button>
-          </div>
-
-          <div className="mt-16 text-sm text-text-light/70 flex gap-8 pt-6 border-t border-divider/60 max-w-sm">
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
           </div>
         </div>
 

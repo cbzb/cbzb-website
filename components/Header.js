@@ -7,28 +7,57 @@ import MobileMenu from './MobileMenu'
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+  // --- 1. AJUSTES DE BORDA ---
+  const borderColor = "border-secondary"
+  const borderThickness = {
+    horizontal: "border-b-2", // Engrossado para 2px
+    vertical: "border-r-1",   // Engrossado para 2px
+    verticalLeft: "border-l" // Engrossado para 2px
+  }
+  
+  // --- 2. AJUSTE DE PADDING ("Borda" lateral) ---
+  // Aumentado de px-12 para px-16 (4rem) para mais respiro
+  const globalPaddingX = "px-16" 
+
   return (
-    <header className="w-full border-b border-divider">
-      {/* Desktop */}
-      <div className="hidden md:flex items-center justify-between mx-auto max-w-7xl px-6 lg:px-10 py-6">
-        <div className="font-serif text-text-light/90 text-lg tracking-wide pr-6 lg:pr-10">
-          CAPUTO BASTOS ZVEITER & BARBOSA
+    <header className="w-full bg-primary-dark relative">
+      
+      {/* --- Desktop Header --- */}
+      <div className="hidden md:grid grid-cols-[auto_1fr_auto] items-stretch border-b-2 border-secondary ml-20">
+          
+        {/* Coluna 1: Logo Principal */}
+        {/* Aplicado padding 'pl-0 pr-16' e borda 'border-r-2' */}
+        <div className={`pl-0 pr-16 pt-6 pb-6 ${borderThickness.vertical} ${borderColor}`}>
+          <img src="/logo.png" alt="Caputo Bastos Zveiter & Barbosa" className="h-[65px] w-auto ml-[-12px]" />
+          
+          {/* Linha horizontal removida conforme solicitação */}
         </div>
-        <nav className="font-sans uppercase text-sm tracking-wide text-text-light/90 border-x border-divider px-8 lg:px-12">
-          <ul className="flex gap-10">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/sobre">Sobre</Link></li>
-            <li><Link href="/casos">Advogados</Link></li>
-            <li><Link href="/servicos">Serviços</Link></li>
-            <li><Link href="/contato">Contato</Link></li>
+
+        {/* Coluna 2: Navegação Centralizada */}
+        <nav className="font-sans text-xs xl:text-sm tracking-widest text-text-light/90 flex items-center justify-center">
+          <ul className="flex items-center gap-10 xl:gap-14 uppercase">
+            <li><Link href="/" className="hover:text-text-light/100 transition-colors">Home</Link></li>
+            <li><Link href="/sobre" className="hover:text-text-light/100 transition-colors">Sobre</Link></li>
+            <li><Link href="/advogados" className="hover:text-text-light/100 transition-colors">Advogados</Link></li>
+            <li><Link href="/servicos" className="hover:text-text-light/100 transition-colors">Serviços</Link></li>
+            <li><Link href="/contato" className="hover:text-text-light/100 transition-colors">Contato</Link></li>
           </ul>
         </nav>
-        <div className="font-serif text-text-light/80 pl-6 lg:pl-10">ZBC</div>
+
+        {/* Coluna 3: Monograma ZBC */}
+        {/* Borda à esquerda encostada no ícone e ícone próximo da direita */}
+        <div className={`relative flex items-center justify-end pl-4 pr-2 border-l-2 ${borderColor}`}>
+          <img src="/icone.png" alt="ZBC" className="h-[46px] w-auto" />
+        </div>
+          
       </div>
 
-      {/* Mobile */}
-      <div className="md:hidden mx-auto max-w-7xl px-4 py-5 flex items-center justify-between">
-        <div className="font-serif text-text-light/90">ZBC</div>
+      {/* --- Mobile Header --- */}
+      {/* Aplicado 'px-16' no mobile também */}
+      <div className={`md:hidden ${globalPaddingX} py-5 flex items-center justify-between`}>
+        <div>
+          <img src="/icone.png" alt="ZBC" className="h-[28px] w-auto" />
+        </div>
         <button
           aria-label="Abrir menu"
           className="flex flex-col gap-1.5 items-end"
@@ -44,5 +73,3 @@ export default function Header() {
     </header>
   )
 }
-
-
