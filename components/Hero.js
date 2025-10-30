@@ -7,13 +7,13 @@ export default function Hero() {
       <div className="hidden md:grid md:grid-cols-2 min-h-[540px] lg:min-h-[680px]">
         {/* Left column */}
         <div className="bg-primary-dark text-text-light flex flex-col justify-center px-8 lg:px-20 py-20 relative border-r border-divider">
-          <h1 className="font-serif font-normal text-5xl leading-tight max-w-2xl">
+          <h1 className="font-serif font-normal text-5xl leading-tight max-w-2xl animate-fade-up">
             Excelência jurídica com olhar estratégico.
           </h1>
-          <p className="mt-8 font-sans text-lg text-text-light/80 max-w-xl">
+          <p className="mt-8 font-sans text-lg text-text-light/80 max-w-xl animate-fade-up" style={{animationDelay:'120ms'}}>
             Expertise em Direito Trabalhista,<br />Empresarial e Desportivo.
           </p>
-          <div className="mt-12">
+          <div className="mt-12 animate-fade" style={{animationDelay:'240ms'}}>
             <Button href="#contato">Agendar consulta</Button>
           </div>
         </div>
