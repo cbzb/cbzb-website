@@ -15,7 +15,7 @@ export default function ServicosPage() {
   ]
 
   return (
-    <section className="w-full px-16 md:ml-20 py-16">
+    <section className="w-full px-16 md:pl-20 py-16">
       <h1 className="font-sans font-medium text-4xl md:text-5xl mb-8">Serviços</h1>
       <div className="border-t-2 border-divider">
         <ul className="divide-y-2 divide-[var(--color-divider-base)]">

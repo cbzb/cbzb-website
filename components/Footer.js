@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-divider text-xs md:text-sm text-text-light/90 bg-primary-dark">
-      <div className="mx-auto max-w-7xl px-4 py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0">
+    <footer className="border-t-2 border-divider text-xs md:text-sm text-text-light/90 bg-primary-dark w-full">
+      <div className="w-full px-16 md:pl-20 py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0">
         <div className="flex-1 text-start w-full">
           <p className="mb-1">©2025 CBZBLAW. TODOS OS DIREITOS RESERVADOS.</p>
         </div>

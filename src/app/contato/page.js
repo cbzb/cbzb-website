@@ -25,7 +25,7 @@ export default function ContatoPage() {
   }
 
   return (
-    <section className="w-full px-16 md:ml-20 py-16">
+    <section className="w-full px-16 md:pl-20 py-16">
       <h1 className="font-sans font-medium text-4xl md:text-5xl mb-6">Contato</h1>
       <p className="text-text-light/80 max-w-3xl leading-relaxed">
         SHIS QI 5, Conjunto 15, Casa 24 – Brasília/DF — CEP: 71.615-150 — Tel: +55 61 3364 0025 — cbzblaw.com.br

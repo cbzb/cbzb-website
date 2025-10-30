@@ -1,6 +1,6 @@
 export default function SobrePage() {
   return (
-    <section className="w-full px-16 md:ml-20 py-16">
+    <section className="w-full px-16 md:pl-20 py-16">
       <h1 className="font-sans font-medium text-4xl md:text-5xl mb-8">Sobre</h1>
       <div className="border-t-2 border-divider pt-8 text-text-light/80 leading-relaxed">
         <p className="max-w-3xl">
