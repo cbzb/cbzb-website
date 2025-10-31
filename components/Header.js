@@ -23,12 +23,14 @@ export default function Header() {
     <header className="w-full relative bg-primary-dark ">
       
       {/* --- Desktop Header --- */}
-      <div className="hidden md:grid grid-cols-[auto_1fr_auto] items-stretch border-b-2 border-secondary ml-20">
+      <div className="hidden md:grid grid-cols-[auto_1fr_auto] items-stretch border-b-2 border-secondary ml-28">
           
         {/* Coluna 1: Logo Principal */}
         {/* Aplicado padding 'pl-0 pr-16' e borda 'border-r-2' */}
         <div className={`pl-0 pr-16 pt-6 pb-6 ${borderThickness.vertical} ${borderColor}`}>
-          <img src="/logo.png" alt="Caputo Bastos Zveiter & Barbosa" className="h-[65px] w-auto ml-[-12px]" />
+          <Link href="/">
+            <img src="/logo.png" alt="Caputo Bastos Zveiter & Barbosa" className="h-[65px] w-auto ml-[-12px]" />
+          </Link>
           
           {/* Linha horizontal removida conforme solicitação */}
         </div>
@@ -56,7 +58,9 @@ export default function Header() {
       {/* Aplicado 'px-16' no mobile também */}
       <div className={`md:hidden ${globalPaddingX} py-12 flex items-center justify-between`}>
         <div>
-          <img src="/icone.png" alt="ZBC" className="h-[96px] w-auto" />
+          <Link href="/">
+            <img src="/icone.png" alt="ZBC" className="h-[96px] w-auto" />
+          </Link>
         </div>
         <button
           aria-label="Abrir menu"

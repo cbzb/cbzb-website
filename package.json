@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^12.23.24",
     "next": "14.2.5",
     "ngrok": "^5.0.0-beta.2",
     "nodemailer": "^6.10.1",

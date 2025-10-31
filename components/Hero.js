@@ -6,11 +6,11 @@ export default function Hero() {
       {/* Desktop layout */}
       <div className="hidden md:grid md:grid-cols-2 min-h-[540px] lg:min-h-[680px]">
         {/* Left column */}
-        <div className="bg-primary-dark text-text-light flex flex-col justify-center px-8 lg:px-20 py-20 relative border-r border-divider">
+        <div className="bg-primary-dark text-text-light flex flex-col justify-center px-10 md:pl-28 md:pr-0 lg:pl-28 lg:pr-0 py-20 relative border-r border-divider">
           <h1 className="font-sans font-medium text-5xl leading-tight max-w-2xl animate-fade-up">
             Excelência jurídica com olhar estratégico.
           </h1>
-          <p className="mt-8 font-sans text-lg text-[var(--color-divider-base)] max-w-xl animate-fade-up" style={{animationDelay:'120ms'}}>
+          <p className="mt-8 font-sans text-lg text-text-light/80 max-w-xl animate-fade-up" style={{animationDelay:'120ms'}}>
             Expertise em Direito Trabalhista,<br />Empresarial e Desportivo.
           </p>
           <div className="mt-12 animate-fade" style={{animationDelay:'240ms'}}>
@@ -30,7 +30,7 @@ export default function Hero() {
 
       {/* Mobile layout */}
       <div className="md:hidden relative overflow-visible">
-        <div className="relative bg-primary-dark text-text-light px-12 py-16 min-h-[90dvh] flex flex-col overflow-visible">
+        <div className="relative bg-primary-dark text-text-light px-10 py-16 min-h-[90dvh] flex flex-col overflow-visible">
           {/* Watermark image only on mobile hero (grande e parcialmente visível) */}
           <img
             src="/icone_black.png"
@@ -44,7 +44,7 @@ export default function Hero() {
             <h1 className="font-sans font-medium text-5xl leading-tight">
               Excelência jurídica com olhar estratégico.
             </h1>
-            <p className="mt-5 font-sans text-lg text-[var(--color-divider-base)]">
+            <p className="mt-5 font-sans text-lg text-text-light/80">
               Expertise em Direito Trabalhista,<br />Empresarial e Desportivo.
             </p>
             <div className="mt-8">

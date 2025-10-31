@@ -10,7 +10,9 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
       {/* Header */}
       <div className="flex items-center justify-between px-10 py-12 ">
         <div>
-          <img src="/icone_black.png" alt="ZBC" className="h-[96px] w-auto" />
+          <Link href="/" onClick={() => setIsOpen(false)}>
+            <img src="/icone_black.png" alt="ZBC" className="h-[96px] w-auto" />
+          </Link>
         </div>
         <button
           aria-label="Fechar menu"
@@ -21,7 +23,7 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
         </button>
       </div>
       {/* Nav */}
-      <nav className="px-12">
+      <nav className="px-10 flex-1">
         <ul className="flex flex-col text-xl text-black font-sans uppercase tracking-widest">
           {[
             { href: '/', label: 'Home' },
@@ -43,7 +45,45 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
         </ul>
       </nav>
       {/* Footer */}
-      
+      <div className=" px-10 py-8">
+        <div className="flex flex-col gap-4 text-sm text-black/80">
+          {/* Informações de contato */}
+          <div className="flex flex-col gap-2">
+            
+            <p className="text-sm leading-relaxed">
+              SHIS QI 5, Conjunto 15, Casa 24<br />
+              Brasília/DF — CEP: 71.615-150<br />
+              Tel: +55 (61) 3364-0025<br />
+              cbzb.com.br
+            </p>
+          </div>
+          
+          {/* Redes sociais */}
+          <div className="flex flex-col gap-2 mt-4">
+            
+            <div className="flex gap-6">
+              <a 
+                href="https://www.instagram.com/zb.law/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:opacity-70 tracking-wide uppercase text-xs transition-opacity"
+              >
+                Instagram
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/zblaw/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:opacity-70 tracking-wide uppercase text-xs transition-opacity"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
     </div>
   )
 }
