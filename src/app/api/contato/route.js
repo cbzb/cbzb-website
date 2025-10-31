@@ -10,9 +10,33 @@ function sanitize(input) {
   return input.replace(/[\u0000-\u001F\u007F]/g, '').trim()
 }
 
+function escapeHtml(text) {
+  if (typeof text !== 'string') return ''
+  const map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  }
+  return text.replace(/[&<>"']/g, m => map[m])
+}
+
 export async function POST(request) {
   try {
-    const body = await request.json()
+    let body
+    try {
+      body = await request.json()
+    } catch (parseErr) {
+      console.error('JSON parse error:', parseErr)
+      return new Response(
+        JSON.stringify({ ok: false, error: 'Dados inválidos' }),
+        { 
+          status: 400,
+          headers: { 'Content-Type': 'application/json' }
+        }
+      )
+    }
     const nome = sanitize(body?.nome)
     const email = sanitize(body?.email)
     const telefone = sanitize(body?.telefone)
@@ -25,7 +49,13 @@ export async function POST(request) {
     if (!isValidEmail(email)) errors.push('email')
     if (!area) errors.push('area')
     if (errors.length) {
-      return new Response(JSON.stringify({ ok: false, error: 'Campos inválidos', fields: errors }), { status: 422 })
+      return new Response(
+        JSON.stringify({ ok: false, error: 'Campos inválidos', fields: errors }),
+        { 
+          status: 422,
+          headers: { 'Content-Type': 'application/json' }
+        }
+      )
     }
 
     const to = process.env.SMTP_TO || 'cbzb.tech@gmail.com'
@@ -38,7 +68,13 @@ export async function POST(request) {
 
     if (!user || !pass) {
       console.error('SMTP_USER/SMTP_PASS não configurados')
-      return new Response(JSON.stringify({ ok: false, error: 'Email não configurado' }), { status: 500 })
+      return new Response(
+        JSON.stringify({ ok: false, error: 'Serviço de email temporariamente indisponível' }),
+        { 
+          status: 503,
+          headers: { 'Content-Type': 'application/json' }
+        }
+      )
     }
 
     const transporter = nodemailer.createTransport({
@@ -54,13 +90,22 @@ export async function POST(request) {
     try {
       await transporter.verify()
     } catch (verifyErr) {
-      console.error('SMTP verify failed:', verifyErr?.message)
+      console.error('SMTP verify failed:', verifyErr?.message || verifyErr)
       return new Response(
-        JSON.stringify({ ok: false, error: 'Falha ao conectar ao servidor SMTP. Verifique host/porta/credenciais.' }),
-        { status: 502 }
+        JSON.stringify({ ok: false, error: 'Serviço de email temporariamente indisponível. Tente novamente mais tarde.' }),
+        { 
+          status: 503,
+          headers: { 'Content-Type': 'application/json' }
+        }
       )
     }
 
+    const safeNome = escapeHtml(nome)
+    const safeEmail = escapeHtml(email)
+    const safeTelefone = escapeHtml(telefone || 'Não informado')
+    const safeArea = escapeHtml(area)
+    const safeMensagem = escapeHtml(mensagem || 'Não informado')
+    
     const subject = `Contato via site — ${area ? `[${area}] ` : ''}${nome}`
     const text = `Nome: ${nome}\nEmail: ${email}\nTelefone: ${telefone || 'Não informado'}\nÁrea de Interesse: ${area}\n\nMensagem:\n${mensagem || 'Não informado'}`
     const html = `
@@ -71,25 +116,25 @@ export async function POST(request) {
           <tbody>
             <tr>
               <td style="padding:8px 0; width:160px; color:#555;">Nome</td>
-              <td style="padding:8px 0; font-weight:600;">${nome}</td>
+              <td style="padding:8px 0; font-weight:600;">${safeNome}</td>
             </tr>
             <tr>
               <td style="padding:8px 0; color:#555;">Email</td>
-              <td style="padding:8px 0;">${email}</td>
+              <td style="padding:8px 0;">${safeEmail}</td>
             </tr>
             <tr>
               <td style="padding:8px 0; color:#555;">Telefone</td>
-              <td style="padding:8px 0;">${telefone || 'Não informado'}</td>
+              <td style="padding:8px 0;">${safeTelefone}</td>
             </tr>
             <tr>
               <td style="padding:8px 0; color:#555;">Área de interesse</td>
-              <td style="padding:8px 0;">${area}</td>
+              <td style="padding:8px 0;">${safeArea}</td>
             </tr>
           </tbody>
         </table>
         <div style="margin-top:16px; padding-top:12px; border-top:1px solid #e5e7eb;">
           <div style="color:#555; margin-bottom:6px;">Mensagem</div>
-          <div style="white-space:pre-wrap; line-height:1.6;">${mensagem || 'Não informado'}</div>
+          <div style="white-space:pre-wrap; line-height:1.6;">${safeMensagem}</div>
         </div>
         <p style="margin-top:24px; color:#64748b; font-size:12px;">Enviado automaticamente pelo site cbzb.com.br</p>
       </div>
@@ -105,17 +150,32 @@ export async function POST(request) {
         html,
       })
     } catch (sendErr) {
-      console.error('SMTP send failed:', sendErr?.message)
+      console.error('SMTP send failed:', sendErr?.message || sendErr)
       return new Response(
-        JSON.stringify({ ok: false, error: 'Falha ao enviar email. Verifique remetente/destinatário e permissões SMTP.' }),
-        { status: 502 }
+        JSON.stringify({ ok: false, error: 'Serviço de email temporariamente indisponível. Tente novamente mais tarde.' }),
+        { 
+          status: 503,
+          headers: { 'Content-Type': 'application/json' }
+        }
       )
     }
 
-    return new Response(JSON.stringify({ ok: true }), { status: 200 })
+    return new Response(
+      JSON.stringify({ ok: true }),
+      { 
+        status: 200,
+        headers: { 'Content-Type': 'application/json' }
+      }
+    )
   } catch (e) {
-    console.error(e)
-    return new Response(JSON.stringify({ ok: false, error: 'Falha ao enviar' }), { status: 400 })
+    console.error('API error:', e)
+    return new Response(
+      JSON.stringify({ ok: false, error: 'Erro interno do servidor. Tente novamente mais tarde.' }),
+      { 
+        status: 500,
+        headers: { 'Content-Type': 'application/json' }
+      }
+    )
   }
 }
 
