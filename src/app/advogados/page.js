@@ -50,7 +50,7 @@ export default function AdvogadosPage() {
     { 
       nome: 'Gabriel Cunha Rodrigues', 
       cargo: 'Associado',
-      foto: null, 
+      foto: '/Fotos/Gabriel.png', 
       especialidades: ['Trabalho', 'Civil', 'Tribunais Superiores'] 
     },
     { 

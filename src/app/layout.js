@@ -8,8 +8,8 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' })
 
 export const metadata = {
-  title: 'CBZBLAW',
-  description: 'Website institucional CBZBLAW',
+  title: 'CBZB',
+  description: 'CBZB Advogados',
 }
 
 export default function RootLayout({ children }) {

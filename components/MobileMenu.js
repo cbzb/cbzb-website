@@ -66,17 +66,19 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
                 href="https://www.instagram.com/zb.law/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="hover:opacity-70 tracking-wide uppercase text-xs transition-opacity"
+                className="hover:opacity-70 transition-opacity"
+                aria-label="Instagram"
               >
-                Instagram
+                <img src="https://img.icons8.com/ios-filled/100/instagram-new--v1.png" alt="Instagram" className="w-6 h-6" />
               </a>
               <a 
                 href="https://www.linkedin.com/company/zblaw/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="hover:opacity-70 tracking-wide uppercase text-xs transition-opacity"
+                className="hover:opacity-70 transition-opacity"
+                aria-label="LinkedIn"
               >
-                LinkedIn
+                <img src="https://img.icons8.com/ios-filled/100/linkedin.png" alt="LinkedIn" className="w-6 h-6" />
               </a>
             </div>
           </div>
