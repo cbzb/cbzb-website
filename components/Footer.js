@@ -12,10 +12,10 @@ export default function Footer() {
         {/* Redes sociais (visível em todas as larguras) */}
         <div className="flex gap-4 items-center self-center md:self-auto md:ml-auto">
           <a href="https://www.instagram.com/zb.law/" target="_blank" rel="noopener noreferrer" className="flex items-center" aria-label="Instagram">
-            <img src="https://img.icons8.com/ios-filled/100/instagram-new--v1.png" alt="Instagram" className="w-6 h-6 invert shrink-0" />
+            <img src="https://img.icons8.com/windows/96/instagram-new.png" alt="Instagram" className="w-6 h-6 invert shrink-0" />
           </a>
           <a href="https://www.linkedin.com/company/zblaw/" target="_blank" rel="noopener noreferrer" className=" flex items-center" aria-label="LinkedIn">
-            <img src="https://img.icons8.com/ios-filled/100/linkedin.png" alt="LinkedIn" className="w-6 h-6 invert shrink-0" />
+            <img src="https://img.icons8.com/windows/96/linkedin-2.png" alt="LinkedIn" className="w-6 h-6 invert shrink-0" />
           </a>
         </div>
       </div>

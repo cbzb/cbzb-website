@@ -69,7 +69,7 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
                 className="hover:opacity-70 transition-opacity"
                 aria-label="Instagram"
               >
-                <img src="https://img.icons8.com/ios-filled/100/instagram-new--v1.png" alt="Instagram" className="w-6 h-6" />
+                <img src="https://img.icons8.com/windows/96/instagram-new.png" alt="Instagram" className="w-6 h-6" />
               </a>
               <a 
                 href="https://www.linkedin.com/company/zblaw/" 
@@ -78,7 +78,7 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
                 className="hover:opacity-70 transition-opacity"
                 aria-label="LinkedIn"
               >
-                <img src="https://img.icons8.com/ios-filled/100/linkedin.png" alt="LinkedIn" className="w-6 h-6" />
+                <img src="https://img.icons8.com/windows/96/linkedin-2.png" alt="LinkedIn" className="w-6 h-6" />
               </a>
             </div>
           </div>

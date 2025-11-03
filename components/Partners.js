@@ -16,13 +16,13 @@ export default function Partners() {
     {
       nome: "LEONARDO CAPUTO BASTOS ZVEITER",
       cargo: "Sócio",
-      foto: null,
+      foto: "/Fotos/Leonardo.png",
       especialidades: ["Civil", "Trabalhista", "Desportivo", "Tribunais Superiores"]
     },
     {
       nome: "IGOR BARBOSA FARIA",
       cargo: "Sócio",
-      foto: null,
+      foto: "/Fotos/Igor.png",
       especialidades: ["Tributário", "Público", "Família e Sucessões", "Societário"]
     }
   ]

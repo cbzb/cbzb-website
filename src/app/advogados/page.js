@@ -14,13 +14,13 @@ export default function AdvogadosPage() {
     { 
       nome: 'Leonardo Caputo', 
       cargo: 'Sócio',
-      foto: null, 
+      foto: '/Fotos/Leonardo.png', 
       especialidades: ['Civil', 'Trabalhista', 'Desportivo', 'Consumidor', 'Médico Hospitalar', 'Tribunais Superiores'] 
     },
     { 
       nome: 'Igor Barbosa', 
       cargo: 'Sócio',
-      foto: null, 
+      foto: '/Fotos/Igor.png', 
       especialidades: ['Público', 'Família e Sucessões', 'Civil/Consumidor', 'Tributário', 'Advocacy'] 
     },
     { 
