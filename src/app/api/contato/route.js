@@ -58,7 +58,7 @@ export async function POST(request) {
       )
     }
 
-    const to = process.env.SMTP_TO || 'cbzb.tech@gmail.com'
+    const to = process.env.SMTP_TO || 'contato@cbzb.com.br'
     const host = process.env.SMTP_HOST || 'smtp.gmail.com'
     const port = Number(process.env.SMTP_PORT || 465)
     const secureEnv = process.env.SMTP_SECURE

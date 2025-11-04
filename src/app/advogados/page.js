@@ -9,7 +9,7 @@ export default function AdvogadosPage() {
       nome: 'Terence Zveiter', 
       cargo: 'Sócio',
       foto: '/Fotos/Terence.png', 
-      especialidades: ['Tribunais Superiores', 'Trabalhista', 'Concorrência', 'Arbitragem e Mediação', 'Desportivo', 'Médico/Hospitalar', 'Público', 'Societário e M&A', 'Civil/Consumidor', 'Advocacy'] 
+      especialidades: ['Tribunais Superiores', 'Trabalhista', 'Concorrência', 'Arbitragem e Mediação', 'Desportivo', 'Médico/Hospitalar', 'Público', 'Societário e M&A', 'Civil', 'Consumidor', 'Advocacy'] 
     },
     { 
       nome: 'Leonardo Caputo', 
@@ -21,13 +21,13 @@ export default function AdvogadosPage() {
       nome: 'Igor Barbosa', 
       cargo: 'Sócio',
       foto: '/Fotos/Igor.png', 
-      especialidades: ['Público', 'Família e Sucessões', 'Civil/Consumidor', 'Tributário', 'Advocacy'] 
+      especialidades: ['Público', 'Família e Sucessões', 'Civil', 'Consumidor', 'Tributário', 'Advocacy'] 
     },
     { 
       nome: 'Aline Loureiro', 
       cargo: 'Associada',
       foto: '/Fotos/aline.png', 
-      especialidades: ['Imobiliário', 'Civil/Consumidor'] 
+      especialidades: ['Imobiliário', 'Civil', 'Consumidor'] 
     },
     { 
       nome: 'João Víctor Pereira da Silva', 
@@ -57,7 +57,7 @@ export default function AdvogadosPage() {
       nome: 'Vítor Fortini Düvelius', 
       cargo: 'Associado',
       foto: '/Fotos/Vitor.png', 
-      especialidades: ['Tribunais Superiores', 'Trabalhista', 'Civil/Consumidor', 'Compliance'] 
+      especialidades: ['Tribunais Superiores', 'Trabalhista', 'Civil', 'Consumidor', 'Compliance'] 
     },
   ]
 

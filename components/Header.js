@@ -27,9 +27,9 @@ export default function Header() {
           
         {/* Coluna 1: Logo Principal */}
         {/* Aplicado padding 'pl-0 pr-16' e borda 'border-r-2' */}
-        <div className={`pl-0 pr-16 pt-6 pb-6 ${borderThickness.vertical} ${borderColor}`}>
+        <div className={`pl-0  ${borderThickness.vertical} ${borderColor}`}>
           <Link href="/">
-            <img src="/logo.png" alt="Caputo Bastos Zveiter & Barbosa" className="h-[65px] w-auto ml-[-12px]" />
+            <img src="/logo.png" alt="Caputo Bastos Zveiter & Barbosa" className="h-[100px] w-auto ml-[-12px]" />
           </Link>
           
           {/* Linha horizontal removida conforme solicitação */}
