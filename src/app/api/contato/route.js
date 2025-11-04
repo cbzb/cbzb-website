@@ -66,6 +66,15 @@ export async function POST(request) {
     const user = process.env.SMTP_USER
     const pass = process.env.SMTP_PASS
 
+    console.log('Configuração SMTP:', {
+      host,
+      port,
+      secure,
+      user: user ? `${user.substring(0, 3)}***` : 'não configurado',
+      pass: pass ? '***' : 'não configurado',
+      to
+    })
+
     if (!user || !pass) {
       console.error('SMTP_USER/SMTP_PASS não configurados')
       return new Response(
@@ -89,10 +98,24 @@ export async function POST(request) {
 
     try {
       await transporter.verify()
+      console.log('SMTP conexão verificada com sucesso')
     } catch (verifyErr) {
-      console.error('SMTP verify failed:', verifyErr?.message || verifyErr)
+      console.error('SMTP verify failed:', {
+        message: verifyErr?.message,
+        code: verifyErr?.code,
+        command: verifyErr?.command,
+        response: verifyErr?.response,
+        responseCode: verifyErr?.responseCode,
+        host,
+        port
+      })
+      
+      const errorMessage = process.env.NODE_ENV === 'development'
+        ? `Erro na verificação SMTP: ${verifyErr?.message || 'Erro desconhecido'}`
+        : 'Serviço de email temporariamente indisponível. Tente novamente mais tarde.'
+      
       return new Response(
-        JSON.stringify({ ok: false, error: 'Serviço de email temporariamente indisponível. Tente novamente mais tarde.' }),
+        JSON.stringify({ ok: false, error: errorMessage }),
         { 
           status: 503,
           headers: { 'Content-Type': 'application/json' }
@@ -140,8 +163,9 @@ export async function POST(request) {
       </div>
     `
 
+    let mailResult
     try {
-      await transporter.sendMail({
+      mailResult = await transporter.sendMail({
         from: `CBZB Website <${user}>`,
         to,
         replyTo: isValidEmail(email) ? email : undefined,
@@ -149,10 +173,44 @@ export async function POST(request) {
         text,
         html,
       })
+      console.log('Email enviado com sucesso:', {
+        messageId: mailResult.messageId,
+        accepted: mailResult.accepted,
+        rejected: mailResult.rejected,
+        to
+      })
     } catch (sendErr) {
-      console.error('SMTP send failed:', sendErr?.message || sendErr)
+      console.error('SMTP send failed:', {
+        message: sendErr?.message,
+        code: sendErr?.code,
+        command: sendErr?.command,
+        response: sendErr?.response,
+        responseCode: sendErr?.responseCode,
+        stack: sendErr?.stack
+      })
+      
+      // Retornar mensagem de erro mais específica em desenvolvimento
+      const errorMessage = process.env.NODE_ENV === 'development' 
+        ? `Erro ao enviar email: ${sendErr?.message || 'Erro desconhecido'}`
+        : 'Serviço de email temporariamente indisponível. Tente novamente mais tarde.'
+      
       return new Response(
-        JSON.stringify({ ok: false, error: 'Serviço de email temporariamente indisponível. Tente novamente mais tarde.' }),
+        JSON.stringify({ ok: false, error: errorMessage }),
+        { 
+          status: 503,
+          headers: { 'Content-Type': 'application/json' }
+        }
+      )
+    }
+
+    // Verificar se o email foi realmente aceito
+    if (mailResult.rejected && mailResult.rejected.length > 0) {
+      console.error('Email foi rejeitado:', mailResult.rejected)
+      return new Response(
+        JSON.stringify({ 
+          ok: false, 
+          error: 'Email foi rejeitado pelo servidor. Verifique o endereço de destino.' 
+        }),
         { 
           status: 503,
           headers: { 'Content-Type': 'application/json' }
@@ -161,7 +219,7 @@ export async function POST(request) {
     }
 
     return new Response(
-      JSON.stringify({ ok: true }),
+      JSON.stringify({ ok: true, messageId: mailResult.messageId }),
       { 
         status: 200,
         headers: { 'Content-Type': 'application/json' }
