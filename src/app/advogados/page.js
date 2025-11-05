@@ -9,22 +9,22 @@ export default function AdvogadosPage() {
       nome: 'Terence Zveiter', 
       cargo: 'Sócio',
       foto: '/Fotos/Terence.png', 
-      especialidades: ['Tribunais Superiores', 'Trabalhista', 'Concorrência', 'Arbitragem e Mediação', 'Desportivo', 'Médico/Hospitalar', 'Público', 'Societário e M&A', 'Civil', 'Consumidor', 'Advocacy'] 
+      especialidades: ['Tribunais Superiores', 'Trabalhista', 'Concorrência', 'Arbitragem e Mediação', 'Desportivo', 'Médico e Hospitalar', 'Público', 'Societário e M&A', 'Civil', 'Consumidor', 'Advocacy'] 
     },
     { 
-      nome: 'Leonardo Caputo', 
+      nome: 'Leonardo Caputo Bastos Zveiter', 
       cargo: 'Sócio',
       foto: '/Fotos/Leonardo.png', 
-      especialidades: ['Civil', 'Trabalhista', 'Desportivo', 'Consumidor', 'Médico Hospitalar', 'Tribunais Superiores'] 
+      especialidades: ['Civil', 'Trabalhista', 'Desportivo', 'Consumidor', 'Médico e Hospitalar', 'Tribunais Superiores'] 
     },
     { 
-      nome: 'Igor Barbosa', 
+      nome: 'Igor Barbosa Faria', 
       cargo: 'Sócio',
       foto: '/Fotos/Igor.png', 
       especialidades: ['Público', 'Família e Sucessões', 'Civil', 'Consumidor', 'Tributário', 'Advocacy'] 
     },
     { 
-      nome: 'Aline Loureiro', 
+      nome: 'Aline Arantes Oliveira Loureiro', 
       cargo: 'Associada',
       foto: '/Fotos/aline.png', 
       especialidades: ['Imobiliário', 'Civil', 'Consumidor'] 
@@ -39,7 +39,7 @@ export default function AdvogadosPage() {
       nome: 'Fabiana da Silva Lelis Faria', 
       cargo: 'Associada',
       foto: '/Fotos/Fabiana.png', 
-      especialidades: ['Trabalho'] 
+      especialidades: ['Trabalhista'] 
     },
     { 
       nome: 'Alexandre Gomes da Silva Alves', 
@@ -51,7 +51,7 @@ export default function AdvogadosPage() {
       nome: 'Gabriel Cunha Rodrigues', 
       cargo: 'Associado',
       foto: '/Fotos/Gabriel.png', 
-      especialidades: ['Trabalho', 'Civil', 'Tribunais Superiores'] 
+      especialidades: ['Trabalhista', 'Civil', 'Tribunais Superiores'] 
     },
     { 
       nome: 'Vítor Fortini Düvelius', 
