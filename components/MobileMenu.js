@@ -50,7 +50,7 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
           {/* Informações de contato */}
           <div className="flex flex-col gap-2">
             
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm leading-relaxed text-justify">
               SHIS QI 5, Conjunto 15, Casa 24<br />
               Brasília/DF — CEP: 71.615-150<br />
               Tel: +55 (61) 3364-0025<br />

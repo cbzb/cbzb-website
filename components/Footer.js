@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="w-full pl-10 pr-10 md:pl-28 md:pr-[80px] py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0">
         {/* Copyright */}
         <div className="text-center md:text-start w-full md:flex-1">
-          <p className="mb-1">
+          <p className="mb-1 text-justify">
             ©2025 CBZB TODOS OS DIREITOS RESERVADOS
             <span className=" md:inline"> |<a href="http://coruss.com.br" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 "> Desenvolvido por Coruss</a></span>
           </p>

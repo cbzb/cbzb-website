@@ -22,7 +22,7 @@ export default function PartnerCard({ nome, cargo, foto = null, especialidades =
         )}
 
         {Array.isArray(especialidades) && especialidades.length > 0 && (
-          <ul className="mt-3 space-y-1 text-sm text-text-light/80 list-disc list-inside">
+          <ul className="mt-3 space-y-1 text-sm text-text-light/80 list-disc list-inside text-justify">
             {especialidades.map((esp) => (
               <li key={esp}>{esp}</li>
             ))}

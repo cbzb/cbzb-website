@@ -19,7 +19,7 @@ export default function FinalCallToAction() {
         initial={slideUp.initial}
         animate={slideUp.animate}
         transition={{ ...smoothTransition, delay: 0.1 }}
-        className="mt-4 max-w-3xl text-text-light/80"
+        className="mt-4 max-w-3xl text-text-light/80 text-justify"
       >
         Agende uma consulta e fale com nossa equipe.
       </motion.p>

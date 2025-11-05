@@ -76,7 +76,7 @@ export default function SobrePage() {
             className="border-t-2 border-divider pt-6"
           >
             <h2 className="font-title font-light tracking-wide uppercase text-sm mb-3">Valores</h2>
-            <ul className="leading-relaxed space-y-2 list-disc list-inside">
+            <ul className="leading-relaxed space-y-2 list-disc list-inside text-justify">
               <li>
                 Prestar serviços jurídicos sempre atento às normas legais e éticas que sustentam o ordenamento jurídico.
               </li>

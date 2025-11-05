@@ -107,7 +107,7 @@ export default function AdvogadosPage() {
                 )}
 
                 {Array.isArray(a.especialidades) && a.especialidades.length > 0 && (
-                  <ul className="mt-3 space-y-1 text-sm text-text-light/80 list-disc list-inside">
+                  <ul className="mt-3 space-y-1 text-sm text-text-light/80 list-disc list-inside text-justify">
                     {a.especialidades.map((esp) => (
                       <li key={esp}>{esp}</li>
                     ))}

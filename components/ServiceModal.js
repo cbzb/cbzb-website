@@ -51,7 +51,7 @@ export default function ServiceModal({ area, isVisible, onClose }) {
                   </h3>
                   <ul className="space-y-3">
                     {area.responsaveis.map((resp, index) => (
-                      <li key={index} className="text-text-light/70 font-title font-light text-sm">
+                      <li key={index} className="text-text-light/70 font-title font-light text-sm text-justify">
                         <span className="text-[var(--color-divider-base)] font-medium">{resp.nome}</span>
                         {resp.cargo && <span className="text-text-light/50"> — {resp.cargo}</span>}
                       </li>
