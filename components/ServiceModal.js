@@ -38,7 +38,7 @@ export default function ServiceModal({ area, isVisible, onClose }) {
 
               {/* Descrição detalhada */}
               <div className="mb-8">
-                <p className="text-text-light/70 font-sans text-base leading-relaxed mb-4">
+                <p className="text-text-light/70 font-sans text-base leading-relaxed mb-4 text-justify">
                   {area.detailedDescription}
                 </p>
               </div>

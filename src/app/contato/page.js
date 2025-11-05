@@ -80,7 +80,7 @@ export default function ContatoPage() {
         initial={slideUp.initial}
         animate={slideUp.animate}
         transition={{ ...smoothTransition, delay: 0.1 }}
-        className="text-text-light/80 max-w-3xl leading-relaxed"
+        className="text-text-light/80 max-w-3xl leading-relaxed text-justify"
       >
         SHIS QI 5, Conjunto 15, Casa 24 – Brasília/DF — CEP: 71.615-150 — Tel: +55 61 3364 0025<br />
         E-mail: <a href="mailto:contato@cbzb.com.br" className="hover:text-text-light transition-colors underline">contato@cbzb.com.br</a>

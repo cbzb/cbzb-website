@@ -22,17 +22,17 @@ export default function SobrePage() {
       >
         {/* Conteúdo Institucional */}
         <div className="max-w-3xl mb-12">
-          <p className="mb-4">
+          <p className="mb-4 text-justify">
             O escritório Caputo Bastos Zveiter & Barbosa – CBZB é referência no cenário jurídico brasileiro, reconhecido pela 
             excelência técnica, pela atuação estratégica e pelo compromisso com resultados concretos para seus clientes.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-justify">
             Com uma equipe multidisciplinar de profissionais altamente especializados, o escritório atua em diversas 
             áreas do Direito — abrangendo Direito Trabalhista, Empresarial, Público, Tributário, Civil, entre outras 
             especialidades. Nossa trajetória é marcada pela entrega de soluções jurídicas precisas e inovadoras, sempre 
             pautadas pelos mais elevados padrões éticos e legais da advocacia.
           </p>
-          <p>
+          <p className="text-justify">
             Valorizamos a relação de confiança e transparência com nossos clientes, conduzindo cada caso com rigor técnico, 
             agilidade e dedicação integral. Mantemos uma postura proativa e colaborativa, investindo continuamente em 
             atualização profissional e incentivando a solução consensual de conflitos, com respeito, urbanidade e 
@@ -49,7 +49,7 @@ export default function SobrePage() {
             className="border-t-2 border-divider pt-6"
           >
             <h2 className="font-sans font-medium tracking-wide uppercase text-sm mb-3">Missão</h2>
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-justify">
               Garantir excelência, rapidez e economia nas soluções apresentadas aos seus clientes, com o propósito 
               de se tornar referência no mercado jurídico e acadêmico, além de contribuirmos para o desenvolvimento 
               social e sustentável de nosso planeta.
@@ -63,7 +63,7 @@ export default function SobrePage() {
             className="border-t-2 border-divider pt-6"
           >
             <h2 className="font-sans font-medium tracking-wide uppercase text-sm mb-3">Visão</h2>
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-justify">
               Estar entre os principais escritórios de advocacia do mercado e ser reconhecido pelos trabalhos 
               desenvolvidos. Foco nos resultados, eficiência e transparência.
             </p>

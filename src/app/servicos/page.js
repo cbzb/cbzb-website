@@ -152,7 +152,7 @@ export default function ServicosPage() {
                     {area.name}
                   </h3>
                   
-                  <p className="text-text-light/70 font-sans text-sm leading-relaxed mb-6 flex-1">
+                  <p className="text-text-light/70 font-sans text-sm leading-relaxed mb-6 flex-1 text-justify">
                     {area.description}
                   </p>
                   
