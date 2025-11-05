@@ -72,7 +72,7 @@ export default function Notification({ message, type = "success", isVisible, onC
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="font-serif text-2xl md:text-3xl text-center mb-4 text-text-light"
+                className="font-title font-light text-2xl md:text-3xl text-center mb-4 text-text-light"
               >
                 {isSuccess ? "Mensagem Enviada" : "Erro ao Enviar"}
               </motion.h3>
@@ -81,7 +81,7 @@ export default function Notification({ message, type = "success", isVisible, onC
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="font-sans text-base text-text-light/80 text-center leading-relaxed mb-8"
+                className="font-title font-light text-base text-text-light/80 text-center leading-relaxed mb-8"
               >
                 {message}
               </motion.p>
@@ -94,7 +94,7 @@ export default function Notification({ message, type = "success", isVisible, onC
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={onClose}
-                className="w-full border-2 button-border text-text-light uppercase font-sans tracking-wide px-6 py-3 hover:bg-text-light hover:text-text-dark transition-colors"
+                className="w-full border-2 button-border text-text-light uppercase font-title font-light tracking-wide px-6 py-3 hover:bg-text-light hover:text-text-dark transition-colors"
               >
                 {isSuccess ? "Fechar" : "Tentar Novamente"}
               </motion.button>

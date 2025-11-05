@@ -10,7 +10,7 @@ export default function FirmIntro() {
         initial={slideUp.initial}
         animate={slideUp.animate}
         transition={smoothTransition}
-        className="max-w-4xl font-sans text-xl leading-relaxed text-justify"
+        className="max-w-4xl font-title font-light text-xl leading-relaxed text-justify"
       >
         Combinamos profundo conhecimento jurídico com uma visão estratégica de negócios para
         defender os interesses dos nossos clientes nos mais complexos cenários.

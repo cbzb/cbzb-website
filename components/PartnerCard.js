@@ -5,11 +5,11 @@ export default function PartnerCard({ nome, cargo, foto = null, especialidades =
         {foto ? (
           <img src={foto} alt={nome} className="w-full h-full object-cover" />
         ) : (
-          <div className="text-text-light/60 font-sans uppercase tracking-wide text-sm">Foto indisponível</div>
+          <div className="text-text-light/60 font-title font-light uppercase tracking-wide text-sm">Foto indisponível</div>
         )}
       </div>
       <div className="p-5 border-t-2 border-divider text-text-light">
-        <h3 className="font-sans uppercase tracking-wide text-sm">{nome}</h3>
+        <h3 className="font-title font-light uppercase tracking-wide text-sm">{nome}</h3>
 
         {cargo && (
           <span className={`inline-block mt-2 text-[11px] uppercase tracking-wide px-2 py-1 border ${

@@ -36,7 +36,7 @@ export default function Header() {
         </div>
 
         {/* Coluna 2: Navegação Centralizada */}
-        <nav className="font-sans text-xs xl:text-sm tracking-widest text-text-light/90 flex items-center justify-center">
+        <nav className="font-title font-light text-xs xl:text-sm tracking-widest text-text-light/90 flex items-center justify-center">
           <ul className="flex items-center gap-10 xl:gap-14 uppercase">
             <li><Link href="/" className="hover:text-text-light/100 transition-colors">Home</Link></li>
             <li><Link href="/sobre" className="hover:text-text-light/100 transition-colors">Sobre</Link></li>

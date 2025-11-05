@@ -6,7 +6,7 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 z-50 bg-primary-light text-[var(--color-divider-base)] flex flex-col font-sans">
+    <div className="fixed inset-0 z-50 bg-primary-light text-[var(--color-divider-base)] flex flex-col font-title font-light">
       {/* Header */}
       <div className="flex items-center justify-between px-10 py-12 ">
         <div>
@@ -24,7 +24,7 @@ export default function MobileMenu({ isOpen, setIsOpen }) {
       </div>
       {/* Nav */}
       <nav className="px-10 flex-1">
-        <ul className="flex flex-col text-xl text-black font-sans uppercase tracking-widest">
+        <ul className="flex flex-col text-xl text-black font-title font-light uppercase tracking-widest">
           {[
             { href: '/', label: 'Home' },
             { href: '/sobre', label: 'Sobre' },

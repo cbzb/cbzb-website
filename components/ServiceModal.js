@@ -32,13 +32,13 @@ export default function ServiceModal({ area, isVisible, onClose }) {
               className="bg-primary-dark border-2 border-divider p-8 md:p-12 max-w-2xl w-full max-h-[90vh] overflow-y-auto pointer-events-auto relative"
             >
               {/* Título */}
-              <h2 className="font-sans font-medium text-2xl md:text-3xl mb-6 text-[var(--color-divider-base)] uppercase tracking-wide">
+              <h2 className="font-title font-light text-2xl md:text-3xl mb-6 text-[var(--color-divider-base)] uppercase tracking-wide">
                 {area.name}
               </h2>
 
               {/* Descrição detalhada */}
               <div className="mb-8">
-                <p className="text-text-light/70 font-sans text-base leading-relaxed mb-4 text-justify">
+                <p className="text-text-light/70 font-title font-light text-base leading-relaxed mb-4 text-justify">
                   {area.detailedDescription}
                 </p>
               </div>
@@ -46,12 +46,12 @@ export default function ServiceModal({ area, isVisible, onClose }) {
               {/* Responsáveis */}
               {area.responsaveis && area.responsaveis.length > 0 && (
                 <div className="mb-8 border-t-2 border-divider pt-6">
-                  <h3 className="font-sans uppercase tracking-wide text-sm mb-4 text-text-light/90">
+                  <h3 className="font-title font-light uppercase tracking-wide text-sm mb-4 text-text-light/90">
                     Responsáveis pela área
                   </h3>
                   <ul className="space-y-3">
                     {area.responsaveis.map((resp, index) => (
-                      <li key={index} className="text-text-light/70 font-sans text-sm">
+                      <li key={index} className="text-text-light/70 font-title font-light text-sm">
                         <span className="text-[var(--color-divider-base)] font-medium">{resp.nome}</span>
                         {resp.cargo && <span className="text-text-light/50"> — {resp.cargo}</span>}
                       </li>
@@ -66,13 +66,13 @@ export default function ServiceModal({ area, isVisible, onClose }) {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={onClose}
-                  className="flex-1 border-2 button-border text-text-light uppercase font-sans tracking-wide px-6 py-3 hover:bg-text-light hover:text-text-dark transition-colors"
+                  className="flex-1 border-2 button-border text-text-light uppercase font-title font-light tracking-wide px-6 py-3 hover:bg-text-light hover:text-text-dark transition-colors"
                 >
                   Fechar
                 </motion.button>
                 <Link
                   href="/contato"
-                  className="flex-1 border-2 button-border text-text-light uppercase font-sans tracking-wide px-6 py-3 hover:bg-text-light hover:text-text-dark transition-colors text-center"
+                  className="flex-1 border-2 button-border text-text-light uppercase font-title font-light tracking-wide px-6 py-3 hover:bg-text-light hover:text-text-dark transition-colors text-center"
                 >
                   Entre em contato
                 </Link>

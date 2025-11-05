@@ -1,11 +1,12 @@
 import './globals.css'
-import { Playfair_Display, Montserrat } from 'next/font/google'
+import { Playfair_Display, Montserrat, Plus_Jakarta_Sans } from 'next/font/google'
 import Script from 'next/script'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' })
+const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-plus-jakarta-sans' })
 
 export const metadata = {
   title: 'CBZB',
@@ -14,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" className={`${playfair.variable} ${montserrat.variable}`}>
+    <html lang="pt-BR" className={`${playfair.variable} ${montserrat.variable} ${plusJakartaSans.variable}`}>
       <body className="min-h-dvh bg-primary-dark text-text-light">
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">

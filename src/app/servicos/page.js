@@ -136,7 +136,7 @@ export default function ServicosPage() {
   return (
     <>
       <section className="w-full pl-10 pr-10 md:pl-28 md:pr-[80px] py-16">
-        <h1 className="font-sans font-medium text-4xl md:text-5xl mb-8">Serviços</h1>
+        <h1 className="font-title font-light text-4xl md:text-5xl mb-8">Serviços</h1>
 
         <div className="border-t-2 border-divider pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -148,17 +148,17 @@ export default function ServicosPage() {
                 transition={{ delay: index * 0.05, ...smoothTransition }}
               >
                 <div className="border-2 border-divider p-6 h-full flex flex-col group hover:bg-primary-dark/5 transition-colors">
-                  <h3 className="font-sans tracking-wide uppercase text-sm md:text-base text-text-light mb-4 transition-colors">
+                  <h3 className="font-title font-light tracking-wide uppercase text-sm md:text-base text-text-light mb-4 transition-colors">
                     {area.name}
                   </h3>
                   
-                  <p className="text-text-light/70 font-sans text-sm leading-relaxed mb-6 flex-1 text-justify">
+                  <p className="text-text-light/70 font-title font-light text-sm leading-relaxed mb-6 flex-1 text-justify">
                     {area.description}
                   </p>
                   
                   <button
                     onClick={() => handleOpenModal(area)}
-                    className="inline-flex items-center gap-2 text-[var(--color-divider-base)] hover:text-[var(--color-primary-light)] font-sans uppercase tracking-wide text-xs underline transition-colors group-hover:gap-3 text-left"
+                    className="inline-flex items-center gap-2 text-[var(--color-divider-base)] hover:text-[var(--color-primary-light)] font-title font-light uppercase tracking-wide text-xs underline transition-colors group-hover:gap-3 text-left"
                   >
                     Saiba mais
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -33,7 +33,7 @@ export default function Partners() {
         initial={fadeIn.initial}
         animate={fadeIn.animate}
         transition={smoothTransition}
-        className="font-sans font-medium text-3xl"
+        className="font-title font-light text-3xl"
       >
         Conheça os Sócios
       </motion.h2>
@@ -65,7 +65,7 @@ export default function Partners() {
         transition={{ ...smoothTransition, delay: 0.4 }}
         className="mt-10"
       >
-        <Link href="/advogados" className="font-sans uppercase tracking-wide text-sm underline">Conheça nossa equipe completa</Link>
+        <Link href="/advogados" className="font-title font-light uppercase tracking-wide text-sm underline">Conheça nossa equipe completa</Link>
       </motion.div>
     </section>
   )

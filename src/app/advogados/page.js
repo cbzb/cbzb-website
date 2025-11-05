@@ -67,7 +67,7 @@ export default function AdvogadosPage() {
         initial={fadeIn.initial}
         animate={fadeIn.animate}
         transition={smoothTransition}
-        className="font-sans font-medium text-4xl md:text-5xl mb-8"
+        className="font-title font-light text-4xl md:text-5xl mb-8"
       >
         Advogados
       </motion.h1>
@@ -90,11 +90,11 @@ export default function AdvogadosPage() {
                 {a.foto ? (
                   <img src={a.foto} alt={a.nome} className="w-full h-full object-cover" />
                 ) : (
-                  <div className="text-text-light/60 font-sans uppercase tracking-wide text-sm">Foto indisponível</div>
+                  <div className="text-text-light/60 font-title font-light uppercase tracking-wide text-sm">Foto indisponível</div>
                 )}
               </div>
               <div className="p-5 border-t-2 border-divider">
-                <h3 className="font-sans font-medium uppercase tracking-wide text-sm">{a.nome}</h3>
+                <h3 className="font-title font-light uppercase tracking-wide text-sm">{a.nome}</h3>
                 
                 {a.cargo && (
                   <span className={`inline-block mt-2 text-[11px] uppercase tracking-wide px-2 py-1 border ${

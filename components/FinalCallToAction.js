@@ -11,7 +11,7 @@ export default function FinalCallToAction() {
         initial={fadeIn.initial}
         animate={fadeIn.animate}
         transition={smoothTransition}
-        className="font-sans font-medium text-3xl"
+        className="font-title font-light text-3xl"
       >
         Pronto para conversar?
       </motion.h2>
@@ -29,7 +29,7 @@ export default function FinalCallToAction() {
         transition={{ ...smoothTransition, delay: 0.2 }}
         className="mt-8"
       >
-        <Link href="/contato" className="border-2 button-border text-text-light uppercase font-sans tracking-wide px-6 py-3 hover:bg-text-light hover:text-text-dark transition-colors">Agendar consulta</Link>
+        <Link href="/contato" className="border-2 button-border text-text-light uppercase font-title font-light tracking-wide px-6 py-3 hover:bg-text-light hover:text-text-dark transition-colors">Agendar consulta</Link>
       </motion.div>
     </section>
   )

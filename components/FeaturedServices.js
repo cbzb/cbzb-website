@@ -12,7 +12,7 @@ export default function FeaturedServices() {
         initial={fadeIn.initial}
         animate={fadeIn.animate}
         transition={smoothTransition}
-        className="font-sans font-medium text-3xl"
+        className="font-title font-light text-3xl"
       >
         Nossas Especialidades
       </motion.h2>
@@ -39,7 +39,7 @@ export default function FeaturedServices() {
         transition={{ ...smoothTransition, delay: 0.4 }}
         className="mt-10"
       >
-        <Link href="/servicos" className="font-sans uppercase tracking-wide text-sm underline">Ver todas as áreas de atuação</Link>
+        <Link href="/servicos" className="font-title font-light uppercase tracking-wide text-sm underline">Ver todas as áreas de atuação</Link>
       </motion.div>
     </section>
   )

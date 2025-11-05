@@ -72,7 +72,7 @@ export default function ContatoPage() {
         initial={fadeIn.initial}
         animate={fadeIn.animate}
         transition={smoothTransition}
-        className="font-sans font-medium text-4xl md:text-5xl mb-6"
+        className="font-title font-light text-4xl md:text-5xl mb-6"
       >
         Contato
       </motion.h1>
@@ -94,19 +94,19 @@ export default function ContatoPage() {
       >
         <form ref={formRef} onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
           <div className="flex flex-col gap-2">
-            <label className="font-sans uppercase text-xs tracking-wide">Nome</label>
+            <label className="font-title font-light uppercase text-xs tracking-wide">Nome</label>
             <input name="nome" required className="bg-transparent border-2 border-divider button-border px-4 py-3 outline-none text-text-light placeholder:text-text-light/50" placeholder="Seu nome completo" />
           </div>
           <div className="flex flex-col gap-2">
-            <label className="font-sans uppercase text-xs tracking-wide">E-mail</label>
+            <label className="font-title font-light uppercase text-xs tracking-wide">E-mail</label>
             <input type="email" name="email" required className="bg-transparent border-2 border-divider button-border px-4 py-3 outline-none text-text-light placeholder:text-text-light/50" placeholder="seu@email.com" />
           </div>
           <div className="flex flex-col gap-2">
-            <label className="font-sans uppercase text-xs tracking-wide">Telefone</label>
+            <label className="font-title font-light uppercase text-xs tracking-wide">Telefone</label>
             <input name="telefone" className="bg-transparent border-2 border-divider button-border px-4 py-3 outline-none text-text-light placeholder:text-text-light/50" placeholder="(00) 00000-0000" />
           </div>
           <div className="md:col-span-2 flex flex-col gap-2">
-            <label className="font-sans uppercase text-xs tracking-wide">Área de Interesse</label>
+            <label className="font-title font-light uppercase text-xs tracking-wide">Área de Interesse</label>
             <select name="area" required className="bg-transparent border-2 border-divider button-border px-4 py-3 outline-none text-text-light">
               <option value="" className="bg-primary-dark text-text-light">Selecione uma área</option>
               {areasAtuacao.map((area) => (
@@ -117,11 +117,11 @@ export default function ContatoPage() {
             </select>
           </div>
           <div className="md:col-span-2 flex flex-col gap-2">
-            <label className="font-sans uppercase text-xs tracking-wide">Mensagem</label>
+            <label className="font-title font-light uppercase text-xs tracking-wide">Mensagem</label>
             <textarea name="mensagem" rows={5} className="bg-transparent border-2 border-divider button-border px-4 py-3 outline-none text-text-light placeholder:text-text-light/50" placeholder="Como podemos ajudar?" />
           </div>
           <div className="md:col-span-2">
-            <button type="submit" disabled={status==='sending'} className="border-2 button-border text-text-light uppercase font-sans tracking-wide px-6 py-3 hover:bg-text-light hover:text-text-dark transition-colors">
+            <button type="submit" disabled={status==='sending'} className="border-2 button-border text-text-light uppercase font-title font-light tracking-wide px-6 py-3 hover:bg-text-light hover:text-text-dark transition-colors">
               {status==='sending' ? 'Enviando…' : 'Enviar mensagem'}
             </button>
           </div>
@@ -141,7 +141,7 @@ export default function ContatoPage() {
         transition={{ ...smoothTransition, delay: 0.3 }}
         className="mt-16"
       >
-        <h2 className="font-sans font-medium text-2xl md:text-3xl mb-6">Nossa Localização</h2>
+        <h2 className="font-title font-light text-2xl md:text-3xl mb-6">Nossa Localização</h2>
         <motion.div
           initial={fadeIn.initial}
           animate={fadeIn.animate}
