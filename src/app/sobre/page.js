@@ -46,28 +46,28 @@ export default function SobrePage() {
             initial={fadeIn.initial}
             animate={fadeIn.animate}
             transition={{ ...smoothTransition, delay: 0.15 }}
-            className="bg-white p-6 md:p-2 rounded flex items-center justify-center h-fit"
+            className="bg-white p-2 md:p-0.5 rounded flex items-center justify-center h-fit w-[80%] mx-auto"
           >
             <div className="grid grid-cols-3 md:flex md:flex-wrap gap-4 items-center justify-center">
               <div className="aspect-square flex items-center justify-center md:flex-1 md:min-w-0 md:max-w-[150px]">
-                <img src="/selos/1.jpeg" alt="Selo 1" className="w-full h-full object-contain" />
+                <img src="/selos/1.jpeg" alt="Selo 1" className="w-full h-full object-contain scale-75" />
               </div>
               <div className="aspect-square flex items-center justify-center md:flex-1 md:min-w-0 md:max-w-[150px]">
-                <img src="/selos/2.png" alt="Selo 2" className="w-full h-full object-contain" />
+                <img src="/selos/2.png" alt="Selo 2" className="w-full h-full object-contain scale-75" />
               </div>
               <div className="aspect-square flex items-center justify-center md:flex-1 md:min-w-0 md:max-w-[150px]">
-                <img src="/selos/3.jpeg" alt="Selo 3" className="w-full h-full object-contain" />
+                <img src="/selos/3.jpeg" alt="Selo 3" className="w-full h-full object-contain scale-75" />
               </div>
               <div className="col-span-3 md:col-span-auto flex justify-center gap-4 md:block md:flex-1 md:min-w-0 md:max-w-[150px]">
                 <div className="aspect-square w-[calc(33.333%-0.67rem)] md:w-full flex items-center justify-center">
-                  <img src="/selos/4.jpeg" alt="Selo 4" className="w-full h-full object-contain" />
+                  <img src="/selos/4.jpeg" alt="Selo 4" className="w-full h-full object-contain scale-75" />
                 </div>
                 <div className="aspect-square w-[calc(33.333%-0.67rem)] md:hidden flex items-center justify-center">
-                  <img src="/selos/5.jpeg" alt="Selo 5" className="w-full h-full object-contain" />
+                  <img src="/selos/5.jpeg" alt="Selo 5" className="w-full h-full object-contain scale-75" />
                 </div>
               </div>
               <div className="hidden md:flex aspect-square flex items-center justify-center md:flex-1 md:min-w-0 md:max-w-[150px]">
-                <img src="/selos/5.jpeg" alt="Selo 5" className="w-full h-full object-contain" />
+                <img src="/selos/5.jpeg" alt="Selo 5" className="w-full h-full object-contain scale-75" />
               </div>
             </div>
           </motion.div>
