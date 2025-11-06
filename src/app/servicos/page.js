@@ -34,7 +34,7 @@ export default function ServicosPage() {
     {
       name: 'Direito da Concorrência',
       description: 'Assessoria em questões antitruste, defesa em processos administrativos e judiciais perante o CADE, além de análise de atos de concentração.',
-      detailedDescription: 'Assessoria especializada em questões antitruste, com ampla experiência em defesa em processos administrativos e judiciais perante o Conselho Administrativo de Defesa Econômica (CADE). Oferecemos análise de atos de concentração, defesa em processos de cartelização e assessoria em políticas de compliance antitruste.',
+      detailedDescription: 'Assessoria especializada em questões antitruste, com ampla experiência em defesa em processos administrativos perante o Conselho Administrativo de Defesa Econômica (CADE) e judiciais. Oferecemos análise de atos de concentração, defesa em processos de cartelização e assessoria em políticas de compliance antitruste.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' }
       ]
@@ -57,9 +57,9 @@ export default function ServicosPage() {
       ]
     },
     {
-      name: 'Direito de Família e de Sucessões',
+      name: 'Planejamento Sucessório e Patrimonial',
       description: 'Assessoria em divórcios, partilhas, inventários, pensões alimentícias, guarda de menores e planejamento sucessório.',
-      detailedDescription: 'Assessoria completa em questões familiares, incluindo divórcios consensuais e litigiosos, partilha de bens, inventários, pensões alimentícias, guarda e regulamentação de visitas de menores. Oferecemos também planejamento sucessório, elaboração de testamentos e mediação familiar.',
+      detailedDescription: 'Elaboração de estratégias jurídicas, fiscais e patrimoniais destinadas a organizar, proteger e transmitir o patrimônio de uma pessoa ou família, de forma eficiente, segura e conforme seus interesses e valores, tanto em vida quanto após o falecimento.',
       responsaveis: [
         { nome: 'Igor Barbosa Faria', cargo: 'Sócio' }
       ]
@@ -84,16 +84,16 @@ export default function ServicosPage() {
     {
       name: 'Direito Público',
       description: 'Atuação em licitações, contratos administrativos, processos de improbidade administrativa e questões tributárias públicas.',
-      detailedDescription: 'Atuação completa em licitações e contratos administrativos, incluindo preparação de editais, defesa em recursos e impugnações. Representamos clientes em processos de improbidade administrativa e questões tributárias públicas, além de assessoria em parcerias público-privadas e contratos de concessão.',
+      detailedDescription: 'Atuação completa em licitações e contratos administrativos, incluindo preparação de editais, defesa em recursos e impugnações. Representamos clientes em processos de improbidade administrativa e perante os Tribunais de Contas, além de assessoria em parcerias público-privadas e contratos de concessão.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
         { nome: 'Igor Barbosa Faria', cargo: 'Sócio' }
       ]
     },
     {
-      name: 'Direito Societário e M&A',
-      description: 'Assessoria em operações de fusão e aquisição, constituição de empresas, reestruturações societárias e governança corporativa.',
-      detailedDescription: 'Assessoria especializada em operações de fusão e aquisição (M&A), constituição e reorganização de empresas, reestruturações societárias, joint ventures e governança corporativa. Oferecemos due diligence, elaboração de contratos societários e assessoria em questões regulatórias relacionadas a operações societárias.',
+      name: 'Direito Empresarial',
+      description: 'Assessoria jurídica completa para empresas em todas as fases de sua atividade, desde a constituição até operações societárias complexas.',
+      detailedDescription: 'Atuamos na assessoria jurídica de empresas em todas as fases de sua atividade, desde a constituição até operações societárias complexas. Nossa atuação abrange a elaboração e revisão de contratos empresariais, planejamento e reestruturações societárias, resolução de conflitos entre sócios, due diligence e consultoria preventiva para mitigação de riscos. Também representamos nossos clientes em demandas judiciais e arbitrais envolvendo questões empresariais, sempre com foco na segurança jurídica e na estratégia de negócios.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
         { nome: 'Alexandre Gomes da Silva Alves', cargo: 'Associado' }
@@ -119,6 +119,15 @@ export default function ServicosPage() {
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
         { nome: 'Igor Barbosa Faria', cargo: 'Sócio' },
         { nome: 'Alexandre Gomes da Silva Alves', cargo: 'Associado' }
+      ]
+    },
+    {
+      name: 'Advocacy',
+      description: 'Relações governamentais e representação estratégica de interesses perante os Poderes Executivo, Legislativo e órgãos da Administração Pública.',
+      detailedDescription: 'Atuamos em Advocacy e Relações Governamentais, representando de forma ética e estratégica os interesses de empresas, associações e instituições perante os Poderes Executivo, Legislativo e órgãos da Administração Pública. Nosso trabalho envolve o monitoramento legislativo e regulatório, a elaboração de pareceres e posicionamentos técnicos, e a interlocução com autoridades e entidades públicas, com o objetivo de influenciar legitimamente políticas públicas e normas, antecipar riscos e promover um diálogo construtivo entre o setor privado e o poder público.',
+      responsaveis: [
+        { nome: 'Terence Zveiter', cargo: 'Sócio' },
+        { nome: 'Igor Barbosa Faria', cargo: 'Sócio' }
       ]
     },
   ]

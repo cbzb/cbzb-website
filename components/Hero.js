@@ -11,7 +11,7 @@ export default function Hero() {
             Excelência jurídica com olhar estratégico.
           </h1>
           <p className="mt-8 font-title font-light text-lg text-text-light/80 max-w-xl animate-fade-up text-justify" style={{animationDelay:'120ms'}}>
-            Expertise em Direito Trabalhista,<br />Empresarial e Desportivo.
+            Direito Trabalhista,<br />Empresarial e Desportivo.
           </p>
           <div className="mt-12 animate-fade" style={{animationDelay:'240ms'}}>
             <Button href="/contato">Agendar consulta</Button>
@@ -45,7 +45,7 @@ export default function Hero() {
               Excelência jurídica com olhar estratégico.
             </h1>
             <p className="mt-5 font-title font-light text-lg text-text-light/80 text-justify">
-              Expertise em Direito Trabalhista,<br />Empresarial e Desportivo.
+              Direito Trabalhista,<br />Empresarial e Desportivo.
             </p>
             <div className="mt-8">
               <Button href="/contato">Agendar consulta</Button>

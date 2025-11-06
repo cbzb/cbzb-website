@@ -8,22 +8,22 @@ import { fadeIn, slideUp, smoothTransition } from "../components/animations"
 export default function Partners() {
   const partners = [
     {
-      nome: "TERENCE ZVEITER",
-      cargo: "Sócio",
-      foto: "/Fotos/Terence.png",
-      especialidades: ["Civil", "Trabalhista", "Tributário", "Arbitragem e Mediação"]
-    },
-    {
       nome: "LEONARDO CAPUTO BASTOS ZVEITER",
       cargo: "Sócio",
       foto: "/Fotos/Leonardo.png",
-      especialidades: ["Civil", "Trabalhista", "Desportivo", "Tribunais Superiores"]
+      especialidades: ["Civil", "Desportivo", "Direito Empresarial", "Trabalhista", "Tribunais Superiores"]
+    },
+    {
+      nome: "TERENCE ZVEITER",
+      cargo: "Sócio",
+      foto: "/Fotos/Terence.png",
+      especialidades: ["Desportivo", "Médico e Hospitalar", "Trabalhista", "Tribunais Superiores"]
     },
     {
       nome: "IGOR BARBOSA FARIA",
       cargo: "Sócio",
       foto: "/Fotos/Igor.png",
-      especialidades: ["Tributário", "Público", "Família e Sucessões", "Societário"]
+      especialidades: ["Civil", "Direito Empresarial", "Planejamento Sucessório e Patrimonial", "Recuperação de Crédito", "Tributário"]
     }
   ]
 

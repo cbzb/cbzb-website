@@ -23,7 +23,7 @@ export default function SobrePage() {
         {/* Conteúdo Institucional */}
         <div className="max-w-3xl mb-12">
           <p className="mb-4 text-justify">
-            O escritório Caputo Bastos Zveiter & Barbosa – CBZB é referência no cenário jurídico brasileiro, reconhecido pela 
+            O escritório Caputo Bastos, Zveiter & Barbosa – CBZB é referência no cenário jurídico brasileiro, reconhecido pela 
             excelência técnica, pela atuação estratégica e pelo compromisso com resultados concretos para seus clientes.
           </p>
           <p className="mb-4 text-justify">
@@ -41,14 +41,14 @@ export default function SobrePage() {
         </div>
 
         {/* Missão, Visão e Valores */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-text-light/70">
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-text-light/70">
           <motion.div
             initial={slideUp.initial}
             animate={slideUp.animate}
             transition={{ ...smoothTransition, delay: 0.2 }}
             className="border-t-2 border-divider pt-6"
           >
-            <h2 className="font-title font-light tracking-wide uppercase text-sm mb-3">Missão</h2>
+            <h2 className="font-title font-bold tracking-wide uppercase text-sm mb-3">Missão</h2>
             <p className="leading-relaxed text-justify">
               Garantir excelência, rapidez e economia nas soluções apresentadas aos seus clientes, com o propósito 
               de se tornar referência no mercado jurídico e acadêmico, além de contribuirmos para o desenvolvimento 
@@ -62,7 +62,7 @@ export default function SobrePage() {
             transition={{ ...smoothTransition, delay: 0.3 }}
             className="border-t-2 border-divider pt-6"
           >
-            <h2 className="font-title font-light tracking-wide uppercase text-sm mb-3">Visão</h2>
+            <h2 className="font-title font-bold tracking-wide uppercase text-sm mb-3">Visão</h2>
             <p className="leading-relaxed text-justify">
               Estar entre os principais escritórios de advocacia do mercado e ser reconhecido pelos trabalhos 
               desenvolvidos. Foco nos resultados, eficiência e transparência.
@@ -75,7 +75,7 @@ export default function SobrePage() {
             transition={{ ...smoothTransition, delay: 0.4 }}
             className="border-t-2 border-divider pt-6"
           >
-            <h2 className="font-title font-light tracking-wide uppercase text-sm mb-3">Valores</h2>
+            <h2 className="font-title font-bold tracking-wide uppercase text-sm mb-3">Valores</h2>
             <ul className="leading-relaxed space-y-2 list-disc list-inside text-justify">
               <li>
                 Prestar serviços jurídicos sempre atento às normas legais e éticas que sustentam o ordenamento jurídico.

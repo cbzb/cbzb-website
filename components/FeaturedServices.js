@@ -22,7 +22,7 @@ export default function FeaturedServices() {
         transition={{ ...smoothTransition, delay: 0.1 }}
         className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12"
       >
-        {['Direito Trabalhista', 'Direito Societário e M&A', 'Direito Desportivo'].map((title, index) => (
+        {['Tribunais Superiores', 'Trabalhista', 'Desportivo'].map((title, index) => (
           <motion.div
             key={title}
             initial={fadeIn.initial}

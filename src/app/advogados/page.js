@@ -6,28 +6,28 @@ import { fadeIn, slideUp, smoothTransition } from "../../../components/animation
 export default function AdvogadosPage() {
   const advogados = [
     { 
-      nome: 'Terence Zveiter', 
-      cargo: 'Sócio',
-      foto: '/Fotos/Terence.png', 
-      especialidades: ['Tribunais Superiores', 'Trabalhista', 'Concorrência', 'Arbitragem e Mediação', 'Desportivo', 'Médico e Hospitalar', 'Público', 'Societário e M&A', 'Civil', 'Consumidor', 'Advocacy'] 
-    },
-    { 
       nome: 'Leonardo Caputo Bastos Zveiter', 
       cargo: 'Sócio',
       foto: '/Fotos/Leonardo.png', 
-      especialidades: ['Civil', 'Trabalhista', 'Desportivo', 'Consumidor', 'Médico e Hospitalar', 'Tribunais Superiores'] 
+      especialidades: ['Civil', 'Consumidor', 'Desportivo', 'Direito Empresarial', 'Médico e Hospitalar', 'Trabalhista', 'Tribunais Superiores'] 
+    },
+    { 
+      nome: 'Terence Zveiter', 
+      cargo: 'Sócio',
+      foto: '/Fotos/Terence.png', 
+      especialidades: ['Advocacy', 'Arbitragem e Mediação', 'Civil', 'Concorrência', 'Consumidor', 'Desportivo', 'Médico e Hospitalar', 'Público', 'Societário e M&A', 'Trabalhista', 'Tribunais Superiores'] 
     },
     { 
       nome: 'Igor Barbosa Faria', 
       cargo: 'Sócio',
       foto: '/Fotos/Igor.png', 
-      especialidades: ['Público', 'Família e Sucessões', 'Civil', 'Consumidor', 'Tributário', 'Advocacy'] 
+      especialidades: ['Civil', 'Direito Empresarial', 'Planejamento Sucessório e Patrimonial', 'Recuperação de Crédito', 'Tributário'] 
     },
     { 
       nome: 'Aline Arantes Oliveira Loureiro', 
       cargo: 'Associada',
       foto: '/Fotos/aline.png', 
-      especialidades: ['Imobiliário', 'Civil', 'Consumidor'] 
+      especialidades: ['Civil', 'Consumidor', 'Imobiliário'] 
     },
     { 
       nome: 'João Víctor Pereira da Silva', 
@@ -45,19 +45,19 @@ export default function AdvogadosPage() {
       nome: 'Alexandre Gomes da Silva Alves', 
       cargo: 'Associado',
       foto: '/Fotos/Alexandre.png', 
-      especialidades: ['Societário', 'Civil', 'Tributário'] 
+      especialidades: ['Civil', 'Societário', 'Tributário'] 
     },
     { 
       nome: 'Gabriel Cunha Rodrigues', 
       cargo: 'Associado',
       foto: '/Fotos/Gabriel.png', 
-      especialidades: ['Trabalhista', 'Civil', 'Tribunais Superiores'] 
+      especialidades: ['Civil', 'Trabalhista', 'Tribunais Superiores'] 
     },
     { 
       nome: 'Vítor Fortini Düvelius', 
       cargo: 'Associado',
       foto: '/Fotos/Vitor.png', 
-      especialidades: ['Tribunais Superiores', 'Trabalhista', 'Civil', 'Consumidor', 'Compliance'] 
+      especialidades: ['Civil', 'Compliance', 'Consumidor', 'Trabalhista', 'Tribunais Superiores'] 
     },
   ]
 

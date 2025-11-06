@@ -12,16 +12,17 @@ export default function ContatoPage() {
   const formRef = useRef(null)
 
   const areasAtuacao = [
+    'Advocacy',
     'Arbitragem e Mediação',
     'Direito Civil e do Consumidor',
     'Direito da Concorrência',
     'Direito Desportivo',
+    'Direito Empresarial',
     'Direito Marítimo e Portuário',
-    'Direito de Família e de Sucessões',
+    'Planejamento Sucessório e Patrimonial',
     'Direito Imobiliário e da Construção Civil',
     'Direito Médico e Hospitalar',
     'Direito Público',
-    'Direito Societário e M&A',
     'Direito Trabalhista',
     'Direito Tributário'
   ]
