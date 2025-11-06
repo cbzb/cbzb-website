@@ -1,18 +1,18 @@
 export default function PartnerCard({ nome, cargo, foto = null, especialidades = [] }) {
   return (
-    <div className="border-2 border-divider">
-      <div className="aspect-[2/3] bg-primary-dark/40 flex items-center justify-center">
+    <div className="border-2 border-divider h-full flex flex-col">
+      <div className="aspect-[2/3] bg-primary-dark/40 flex items-center justify-center flex-shrink-0">
         {foto ? (
           <img src={foto} alt={nome} className="w-full h-full object-cover" />
         ) : (
           <div className="text-text-light/60 font-title font-light uppercase tracking-wide text-sm">Foto indisponível</div>
         )}
       </div>
-      <div className="p-5 border-t-2 border-divider text-text-light">
+      <div className="p-5 border-t-2 border-divider text-text-light flex flex-col flex-1">
         <h3 className="font-title font-light uppercase tracking-wide text-sm">{nome}</h3>
 
         {cargo && (
-          <span className={`inline-block mt-2 text-[11px] uppercase tracking-wide px-2 py-1 border ${
+          <span className={`inline-block mt-2 text-[11px] uppercase tracking-wide px-2 py-1 border flex-shrink-0 w-fit ${
             cargo.toLowerCase() === 'sócio' 
               ? 'border-[var(--color-divider-base)] bg-[var(--color-divider-base)]/20 text-[var(--color-divider-base)]' 
               : 'button-border text-text-light/80'
@@ -22,7 +22,7 @@ export default function PartnerCard({ nome, cargo, foto = null, especialidades =
         )}
 
         {Array.isArray(especialidades) && especialidades.length > 0 && (
-          <ul className="mt-3 space-y-1 text-sm text-text-light/80 list-disc list-inside text-justify">
+          <ul className="mt-3 space-y-1 text-sm text-text-light/80 list-disc list-inside text-justify flex-1">
             {especialidades.map((esp) => (
               <li key={esp}>{esp}</li>
             ))}

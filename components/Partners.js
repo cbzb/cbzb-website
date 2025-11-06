@@ -41,7 +41,7 @@ export default function Partners() {
         initial={slideUp.initial}
         animate={slideUp.animate}
         transition={{ ...smoothTransition, delay: 0.1 }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12"
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 items-stretch"
       >
         {partners.map((partner, index) => (
           <motion.div
@@ -49,6 +49,7 @@ export default function Partners() {
             initial={fadeIn.initial}
             animate={fadeIn.animate}
             transition={{ ...smoothTransition, delay: 0.2 + index * 0.1 }}
+            className="h-full"
           >
             <PartnerCard
               nome={partner.nome}
