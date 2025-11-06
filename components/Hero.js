@@ -1,6 +1,25 @@
+"use client"
+
+import { useState, useEffect } from 'react'
 import Button from './Button'
 
 export default function Hero() {
+  const images = [
+    { src: '/hero.jpeg', alt: 'Profissionais em reunião' },
+    { src: '/hero.jpeg', alt: 'Profissionais em reunião' },
+    { src: '/hero.jpeg', alt: 'Profissionais em reunião' }
+  ]
+
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+    }, 5000) // Troca a cada 5 segundos
+
+    return () => clearInterval(interval)
+  }, [images.length])
+
   return (
     <section className="border-b-2 border-divider">
       {/* Desktop layout */}
@@ -18,13 +37,37 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right column - image */}
-        <div className="relative">
-          <img
-            src="/hero.jpeg"
-            alt="Profissionais em reunião"
-            className="h-full w-full object-cover"
-          />
+        {/* Right column - carousel */}
+        <div className="relative overflow-hidden">
+          <div 
+            className="flex h-full transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {images.map((image, index) => (
+              <div key={index} className="min-w-full h-full">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+          {/* Indicadores */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  index === currentIndex 
+                    ? 'w-8 bg-text-light' 
+                    : 'w-2 bg-text-light/50 hover:bg-text-light/75'
+                }`}
+                aria-label={`Ir para imagem ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
