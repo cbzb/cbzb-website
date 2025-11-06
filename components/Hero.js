@@ -5,9 +5,9 @@ import Button from './Button'
 
 export default function Hero() {
   const images = [
-    { src: '/hero.jpeg', alt: 'Profissionais em reunião' },
-    { src: '/hero.jpeg', alt: 'Profissionais em reunião' },
-    { src: '/hero.jpeg', alt: 'Profissionais em reunião' }
+    { src: '/fotos_capa/foto-1.jpg', alt: 'Profissionais em reunião' },
+    { src: '/fotos_capa/foto-2.jpg', alt: 'Profissionais em reunião' },
+    { src: '/fotos_capa/foto-3-jpg.jpg', alt: 'Profissionais em reunião' }
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0)
