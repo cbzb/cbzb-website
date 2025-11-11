@@ -54,7 +54,7 @@ export default function ServicosPage() {
     },
     {
       name: 'Direito Desportivo',
-      description: 'Representação de atletas, clubes e entidades esportivas em questões contratuais, disciplinares e transferências.',
+      description: 'Representação especializada de atletas, clubes e entidades esportivas em questões contratuais, disciplinares e transferências, com expertise em negociação de contratos esportivos e processos de transferência nacional e internacional.',
       detailedDescription: 'Representação especializada de atletas, clubes e entidades esportivas em questões contratuais, disciplinares e transferências. Atuamos perante tribunais desportivos, confederações e federações, com expertise em negociação de contratos esportivos, questões disciplinares e processos de transferência nacional e internacional. Do mesmo modo, o escritório possui vasta experiência em demandas judiciais envolvendo a relação entre atletas e associações desportiva, representando grandes clubes em território nacional.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
@@ -63,7 +63,7 @@ export default function ServicosPage() {
     },
     {
       name: 'Direito Marítimo e Portuário',
-      description: 'Atuação em questões relacionadas ao transporte marítimo, contratos portuários, navegação e regulamentações marítimas.',
+      description: 'Especialização em questões relacionadas ao transporte marítimo, contratos portuários, navegação e regulamentações marítimas, incluindo questões trabalhistas portuárias e seguro marítimo.',
       detailedDescription: 'Especialização em questões relacionadas ao transporte marítimo, contratos portuários, navegação e regulamentações marítimas. Atuamos em questões trabalhistas portuárias, contratos de afretamento, seguro marítimo, salvamento e assistência, além de questões regulatórias portuárias.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' }
@@ -71,7 +71,7 @@ export default function ServicosPage() {
     },
     {
       name: 'Planejamento Sucessório e Patrimonial',
-      description: 'Assessoria em divórcios, partilhas, inventários, pensões alimentícias, guarda de menores e planejamento sucessório.',
+      description: 'Elaboração de estratégias jurídicas, fiscais e patrimoniais destinadas a organizar, proteger e transmitir o patrimônio de forma eficiente e segura.',
       detailedDescription: 'Elaboração de estratégias jurídicas, fiscais e patrimoniais destinadas a organizar, proteger e transmitir o patrimônio de uma pessoa ou família, de forma eficiente, segura e conforme seus interesses e valores, tanto em vida quanto após o falecimento.',
       responsaveis: [
         { nome: 'Igor Barbosa Faria', cargo: 'Sócio' }
@@ -79,7 +79,7 @@ export default function ServicosPage() {
     },
     {
       name: 'Direito Imobiliário e da Construção Civil',
-      description: 'Acompanhamento de negócios imobiliários, contratos de construção, incorporação imobiliária e questões condominiais.',
+      description: 'Acompanhamento completo de negócios imobiliários, incluindo contratos de compra e venda, locação, incorporação imobiliária e questões condominiais.',
       detailedDescription: 'Acompanhamento completo de negócios imobiliários, incluindo contratos de compra e venda, locação, incorporação imobiliária e questões condominiais. Atuamos na elaboração e revisão de contratos, due diligence imobiliária, regularização de imóveis e questões relacionadas à construção civil.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
@@ -88,7 +88,7 @@ export default function ServicosPage() {
     },
     {
       name: 'Direito Médico e Hospitalar',
-      description: 'Defesa de profissionais da saúde e instituições hospitalares em processos éticos, trabalhistas e de responsabilidade civil.',
+      description: 'Defesa especializada de profissionais da saúde e instituições hospitalares em processos éticos perante conselhos de classe, processos trabalhistas específicos e ações de responsabilidade civil.',
       detailedDescription: 'Defesa especializada de profissionais da saúde e instituições hospitalares em processos éticos perante conselhos de classe, processos trabalhistas específicos do setor de saúde e ações de responsabilidade civil. Atuamos também em questões relacionadas à saúde suplementar e regulamentações do setor.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
@@ -99,7 +99,7 @@ export default function ServicosPage() {
     },
     {
       name: 'Direito Público',
-      description: 'Atuação em licitações, contratos administrativos, processos de improbidade administrativa e questões tributárias públicas.',
+      description: 'Atuação completa em licitações e contratos administrativos, incluindo preparação de editais e defesa em recursos. Representação em processos de improbidade administrativa e perante os Tribunais de Contas.',
       detailedDescription: 'Atuação completa em licitações e contratos administrativos, incluindo preparação de editais, defesa em recursos e impugnações. Representamos clientes em processos de improbidade administrativa e perante os Tribunais de Contas, além de assessoria em parcerias público-privadas e contratos de concessão.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
@@ -108,7 +108,7 @@ export default function ServicosPage() {
     },
     {
       name: 'Direito Empresarial',
-      description: 'Assessoria jurídica completa para empresas em todas as fases de sua atividade, desde a constituição até operações societárias complexas.',
+      description: 'Assessoria jurídica completa para empresas em todas as fases de sua atividade, desde a constituição até operações societárias complexas, incluindo elaboração de contratos, reestruturações societárias e due diligence.',
       detailedDescription: 'Atuamos na assessoria jurídica de empresas em todas as fases de sua atividade, desde a constituição até operações societárias complexas. Nossa atuação abrange a elaboração e revisão de contratos empresariais, planejamento e reestruturações societárias, resolução de conflitos entre sócios, due diligence e consultoria preventiva para mitigação de riscos. Também representamos nossos clientes em demandas judiciais e arbitrais envolvendo questões empresariais, sempre com foco na segurança jurídica e na estratégia de negócios.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
@@ -119,7 +119,7 @@ export default function ServicosPage() {
     },
     {
       name: 'Direito Trabalhista',
-      description: 'Representação de empresas e trabalhadores em questões trabalhistas, negociações coletivas e processos trabalhistas.',
+      description: 'Representação completa de empresas e trabalhadores em questões trabalhistas, incluindo negociações coletivas, elaboração de contratos de trabalho e assessoria em compliance trabalhista.',
       detailedDescription: 'Representação completa de empresas e trabalhadores em questões trabalhistas, incluindo negociações coletivas, elaboração de contratos de trabalho, defesa em processos trabalhistas e assessoria em compliance trabalhista. Atuamos também em questões de direito coletivo do trabalho e relações sindicais.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
@@ -131,7 +131,7 @@ export default function ServicosPage() {
     },
     {
       name: 'Direito Tributário',
-      description: 'Planejamento tributário, consultoria em questões fiscais, defesa em processos administrativos e judiciais tributários.',
+      description: 'Planejamento tributário estratégico, consultoria em questões fiscais e defesa em processos administrativos e judiciais tributários, incluindo recuperação de créditos e tributação internacional.',
       detailedDescription: 'Planejamento tributário estratégico, consultoria em questões fiscais e defesa em processos administrativos e judiciais tributários. Atuamos em recuperação de créditos tributários, parcelamentos, defesa em autuações fiscais e consultoria em questões de tributação internacional, além de representação perante os principais tribunais tributários do país.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
@@ -141,7 +141,7 @@ export default function ServicosPage() {
     },
     {
       name: 'Advocacy',
-      description: 'Relações governamentais e representação estratégica de interesses perante os Poderes Executivo, Legislativo e órgãos da Administração Pública.',
+      description: 'Relações governamentais e representação estratégica de interesses perante os Poderes Executivo, Legislativo e órgãos da Administração Pública, incluindo monitoramento legislativo e regulatório.',
       detailedDescription: 'Atuamos em Advocacy e Relações Governamentais, representando de forma ética e estratégica os interesses de empresas, associações e instituições perante os Poderes Executivo, Legislativo e órgãos da Administração Pública. Nosso trabalho envolve o monitoramento legislativo e regulatório, a elaboração de pareceres e posicionamentos técnicos, e a interlocução com autoridades e entidades públicas, com o objetivo de influenciar legitimamente políticas públicas e normas, antecipar riscos e promover um diálogo construtivo entre o setor privado e o poder público.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
