@@ -29,9 +29,7 @@ export default function Hero() {
           <h1 className="font-title font-light text-5xl leading-tight max-w-2xl animate-fade-up">
             Excelência jurídica com olhar estratégico.
           </h1>
-          <p className="mt-8 font-title font-light text-lg text-text-light/80 max-w-xl animate-fade-up text-justify" style={{animationDelay:'120ms'}}>
-            Direito Trabalhista,<br />Empresarial e Desportivo.
-          </p>
+          
           <div className="mt-12 animate-fade" style={{animationDelay:'240ms'}}>
             <Button href="/contato">Agendar consulta</Button>
           </div>
