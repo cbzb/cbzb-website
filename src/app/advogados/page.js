@@ -15,7 +15,7 @@ export default function AdvogadosPage() {
       nome: 'Terence Zveiter', 
       cargo: 'Sócio',
       foto: '/Fotos/Terence.png', 
-      especialidades: ['Advocacy', 'Arbitragem e Mediação', 'Civil', 'Concorrência', 'Consumidor', 'Desportivo', 'Médico e Hospitalar', 'Público', 'Societário e M&A', 'Trabalhista', 'Tribunais Superiores'] 
+      especialidades: ['Advocacy', 'Arbitragem e Mediação', 'Civil', 'Concorrência', 'Consumidor', 'Desportivo', 'Médico e Hospitalar', 'Público', 'Empresarial', 'Trabalhista', 'Tribunais Superiores'] 
     },
     { 
       nome: 'Igor Barbosa Faria', 
@@ -27,13 +27,13 @@ export default function AdvogadosPage() {
       nome: 'Aline Arantes Oliveira Loureiro', 
       cargo: 'Associada',
       foto: '/Fotos/aline.png', 
-      especialidades: ['Civil', 'Consumidor', 'Imobiliário'] 
+      especialidades: ['Civil', 'Consumidor', 'Imobiliário', 'Médico e Hospitalar'] 
     },
     { 
       nome: 'João Víctor Pereira da Silva', 
       cargo: 'Associado',
       foto: '/Fotos/joao.png', 
-      especialidades: ['Civil', 'Consumidor'] 
+      especialidades: ['Civil', 'Consumidor', 'Médico e Hospitalar'] 
     },
     { 
       nome: 'Fabiana da Silva Lelis Faria', 

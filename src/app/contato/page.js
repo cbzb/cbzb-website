@@ -14,7 +14,8 @@ export default function ContatoPage() {
   const areasAtuacao = [
     'Advocacy',
     'Arbitragem e Mediação',
-    'Direito Civil e do Consumidor',
+    'Direito Civil',
+    'Direito do Consumidor',
     'Direito da Concorrência',
     'Direito Desportivo',
     'Direito Empresarial',

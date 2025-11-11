@@ -31,7 +31,8 @@ VALORES:
 
 ÁREAS DE ATUAÇÃO (Serviços):
 - ARBITRAGEM E MEDIAÇÃO 
-- DIREITO CIVIL E DO CONSUMIDOR 
+- DIREITO CIVIL
+- DIREITO DO CONSUMIDOR 
 - DIREITO DA CONCORRÊNCIA
 - DIREITO DESPORTIVO 
 - DIREITO MARITÍMO E PORTUÁRIO 
@@ -39,7 +40,7 @@ VALORES:
 - DIREITO IMOBILIÁRIO E DA CONSTRUÇÃO CIVIL 
 - DIREITO MÉDICO E HOSPITALAR 
 - DIREITO PÚBLICO 
-- DIREITO SOCIETÁRIO E M&A 
+- DIREITO EMPRESARIAL 
 - DIREITO TRABALHISTA 
 - DIREITO TRIBUTÁRIO
 
@@ -47,7 +48,7 @@ VALORES:
 ADVOGADOS:
 
 TERENCE ZVEITER 
-Sócio, inscrito na OAB/DF nº 11.717, possui inscrição suplementar em Mato Grosso, Goiás e Minas Gerais, especialista em Direito Civil e Contrato, pela ICAT/AEUDF, especialista em Direito Tributário pela ICAT/AEUDF e Direito Econômico, pela FGV. Pós-graduando em Direito do Trabalho Marítimo e Portuário pela UniSanta (2022/2023). Graduado em Direito pelo Centro Universitário de Brasília - CEUB. Atuação: Tribunais Superiores, Direito Trabalhista, Direito da Concorrência, Arbitragem e Mediação, Direito Desportivo, Direito Médico e Hospitalar, Direito Público, Direito Societário e M&A, Direito Civil e do Consumidor e Advocacy.
+Sócio, inscrito na OAB/DF nº 11.717, possui inscrição suplementar em Mato Grosso, Goiás e Minas Gerais, especialista em Direito Civil e Contrato, pela ICAT/AEUDF, especialista em Direito Tributário pela ICAT/AEUDF e Direito Econômico, pela FGV. Pós-graduando em Direito do Trabalho Marítimo e Portuário pela UniSanta (2022/2023). Graduado em Direito pelo Centro Universitário de Brasília - CEUB. Atuação: Tribunais Superiores, Direito Trabalhista, Direito da Concorrência, Arbitragem e Mediação, Direito Desportivo, Direito Médico e Hospitalar, Direito Público, Direito Empresarial, Direito Civil e do Consumidor e Advocacy.
 
 
 

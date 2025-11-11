@@ -19,9 +19,22 @@ export default function ServicosPage() {
       ]
     },
     {
-      name: 'Direito Civil e do Consumidor',
-      description: 'Atendimento completo em questões contratuais, responsabilidade civil, relações de consumo e defesa dos direitos do consumidor.',
-      detailedDescription: 'Atendimento completo em questões contratuais, responsabilidade civil e relações de consumo. Defendemos os direitos do consumidor em todas as esferas, incluindo questões contratuais complexas, responsabilidade civil extracontratual e contratual, bem como ações coletivas e individuais em defesa do consumidor.',
+      name: 'Direito Civil',
+      description: 'Atendimento completo em questões estratégicas envolvendo disputas de natureza civil e contratual, seja por meio de soluções extrajudiciais ou em medidas judiciais.',
+      detailedDescription: 'Atendimento completo em questões estratégicas envolvendo disputas de natureza civil e contratual, seja por meio de soluções extrajudiciais ou em medidas judiciais, em favor dos nossos clientes. Possuindo expertise em solução de conflitos complexos perante, especialmente, aos Tribunais Superiores.',
+      responsaveis: [
+        { nome: 'Terence Zveiter', cargo: 'Sócio' },
+        { nome: 'Leonardo Caputo Bastos Zveiter', cargo: 'Sócio' },
+        { nome: 'Igor Barbosa Faria', cargo: 'Sócio' },
+        { nome: 'Aline Arantes Oliveira Loureiro', cargo: 'Associada' },
+        { nome: 'João Víctor Pereira da Silva', cargo: 'Associado' },
+        { nome: 'Vítor Fortini Düvelius', cargo: 'Associado' }
+      ]
+    },
+    {
+      name: 'Direito do Consumidor',
+      description: 'Atendimento completo envolvendo contratos oriundos de relação de consumo, atuando extrajudicialmente e em disputas judiciais.',
+      detailedDescription: 'Atendimento completo envolvendo contratos oriundos de relação de consumo, atuando extrajudicialmente visando precaver nossos clientes de eventuais disputas que porventura possam surgir. Atuamos, do mesmo modo, em disputas judiciais de relação de consumo, possibilitando uma defesa capacitada aos nossos clientes em caso de eventuais litígios, inclusive, com vasta experiência em Ações Civis Públicas e Coletivas.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
         { nome: 'Leonardo Caputo Bastos Zveiter', cargo: 'Sócio' },
@@ -42,7 +55,7 @@ export default function ServicosPage() {
     {
       name: 'Direito Desportivo',
       description: 'Representação de atletas, clubes e entidades esportivas em questões contratuais, disciplinares e transferências.',
-      detailedDescription: 'Representação especializada de atletas, clubes e entidades esportivas em questões contratuais, disciplinares e transferências. Atuamos perante tribunais desportivos, confederações e federações, com expertise em negociação de contratos esportivos, questões disciplinares e processos de transferência nacional e internacional.',
+      detailedDescription: 'Representação especializada de atletas, clubes e entidades esportivas em questões contratuais, disciplinares e transferências. Atuamos perante tribunais desportivos, confederações e federações, com expertise em negociação de contratos esportivos, questões disciplinares e processos de transferência nacional e internacional. Do mesmo modo, o escritório possui vasta experiência em demandas judiciais envolvendo a relação entre atletas e associações desportiva, representando grandes clubes em território nacional.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
         { nome: 'Leonardo Caputo Bastos Zveiter', cargo: 'Sócio' }
@@ -69,6 +82,7 @@ export default function ServicosPage() {
       description: 'Acompanhamento de negócios imobiliários, contratos de construção, incorporação imobiliária e questões condominiais.',
       detailedDescription: 'Acompanhamento completo de negócios imobiliários, incluindo contratos de compra e venda, locação, incorporação imobiliária e questões condominiais. Atuamos na elaboração e revisão de contratos, due diligence imobiliária, regularização de imóveis e questões relacionadas à construção civil.',
       responsaveis: [
+        { nome: 'Terence Zveiter', cargo: 'Sócio' },
         { nome: 'Aline Arantes Oliveira Loureiro', cargo: 'Associada' }
       ]
     },
@@ -78,7 +92,9 @@ export default function ServicosPage() {
       detailedDescription: 'Defesa especializada de profissionais da saúde e instituições hospitalares em processos éticos perante conselhos de classe, processos trabalhistas específicos do setor de saúde e ações de responsabilidade civil. Atuamos também em questões relacionadas à saúde suplementar e regulamentações do setor.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
-        { nome: 'Leonardo Caputo Bastos Zveiter', cargo: 'Sócio' }
+        { nome: 'Leonardo Caputo Bastos Zveiter', cargo: 'Sócio' },
+        { nome: 'Aline Arantes Oliveira Loureiro', cargo: 'Associada' },
+        { nome: 'João Víctor Pereira da Silva', cargo: 'Associado' }
       ]
     },
     {
@@ -96,6 +112,8 @@ export default function ServicosPage() {
       detailedDescription: 'Atuamos na assessoria jurídica de empresas em todas as fases de sua atividade, desde a constituição até operações societárias complexas. Nossa atuação abrange a elaboração e revisão de contratos empresariais, planejamento e reestruturações societárias, resolução de conflitos entre sócios, due diligence e consultoria preventiva para mitigação de riscos. Também representamos nossos clientes em demandas judiciais e arbitrais envolvendo questões empresariais, sempre com foco na segurança jurídica e na estratégia de negócios.',
       responsaveis: [
         { nome: 'Terence Zveiter', cargo: 'Sócio' },
+        { nome: 'Leonardo Caputo Bastos Zveiter', cargo: 'Sócio' },
+        { nome: 'Igor Barbosa Faria', cargo: 'Sócio' },
         { nome: 'Alexandre Gomes da Silva Alves', cargo: 'Associado' }
       ]
     },
